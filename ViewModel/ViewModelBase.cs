@@ -1,7 +1,7 @@
 ﻿using AdmissionsInformationSystem.Patterns;
 using System.ComponentModel;
 
-namespace AdmissionsInformationSystem.Model
+namespace AdmissionsInformationSystem.ViewModel
 {
 	public abstract class ViewModelBase : INotifyPropertyChanged, IWorkObject
 	{

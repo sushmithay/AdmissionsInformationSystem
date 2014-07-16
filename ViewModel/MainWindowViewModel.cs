@@ -2,6 +2,7 @@
 using AdmissionsInformationSystem.Model;
 using AdmissionsInformationSystem.Patterns;
 using System;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 namespace AdmissionsInformationSystem.ViewModel
@@ -23,8 +24,14 @@ namespace AdmissionsInformationSystem.ViewModel
 
 			this.context = context;
 
+			ObservableCollection<StudentViewModel> students = new ObservableCollection<StudentViewModel>();
+			foreach(Student student in context.Students)
+			{
+				students.Add(new StudentViewModel(student));
+			}
+
 			InquiryWorkspace = new InquiryWorkspaceViewModel();
-			StudentWorkspace = new StudentWorkspaceViewModel();
+			StudentWorkspace = new StudentWorkspaceViewModel(students);
 			AdminWorkspace = new AdminWorkspaceViewModel();
 
 			SaveCommand = new DelegateCommand(o => Save());

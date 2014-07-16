@@ -9,10 +9,10 @@ namespace AdmissionsInformationSystem.Model
 		{
 			return new FakeStudentContext(
 				new List<Student>() {
-					new Student() { Id = 1 },
-					new Student() { Id = 2 },
-					new Student() { Id = 3 },
-					new Student() { Id = 4 }
+					new Student() { Name = "test1" },
+					new Student() { Name = "test2" },
+					new Student() { Name = "test3" },
+					new Student() { Name = "test4" }
 				}
 			);
 		}

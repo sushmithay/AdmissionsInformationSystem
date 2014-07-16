@@ -13,7 +13,7 @@ namespace AdmissionsInformationSystem.Context
 
 		public StudentContext()
 		{
-			Students = new FakeObjectSet<Student>();
+			Students = new MySqlObjectSet<Student>();
 		}
 
 		public StudentContext(IEnumerable<Student> students)
@@ -23,7 +23,11 @@ namespace AdmissionsInformationSystem.Context
 				throw new ArgumentNullException("students");
 			}
 
-			Students = new FakeObjectSet<Student>(students);
+			Students = new MySqlObjectSet<Student>();
+			foreach(Student student in students)
+			{
+				Students.AddObject(student);
+			}
 		}
 
 		public event EventHandler<EventArgs> SaveCalled;

@@ -59,6 +59,7 @@
     <Compile Include="Banner.xaml.cs">
       <DependentUpon>Banner.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Context\MySqlObjectSet.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Model\Parameters.cs" />
     <Compile Include="Patterns\IWorkObject.cs" />
@@ -103,7 +104,7 @@
     <Compile Include="Context\IStudentContext.cs" />
     <Compile Include="Context\StudentContext.cs" />
     <Compile Include="Patterns\DelegateCommand.cs" />
-    <Compile Include="Model\ViewModelBase.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\StudentWorkspaceViewModel.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
