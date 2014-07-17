@@ -3,6 +3,7 @@ using AdmissionsInformationSystem.Model;
 using AdmissionsInformationSystem.Patterns;
 using System;
 using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Input;
 
 namespace AdmissionsInformationSystem.ViewModel
@@ -13,26 +14,33 @@ namespace AdmissionsInformationSystem.ViewModel
 		public StudentWorkspaceViewModel StudentWorkspace { get; private set; }
 		public AdminWorkspaceViewModel AdminWorkspace { get; private set; }
 
-		private IStudentContext context;
+		private IContext<Student> Students;
+		private IContext<Parameter> Parameters;
 
-		public MainWindowViewModel(IStudentContext context)
+		public MainWindowViewModel(IContext<Student> studentContext, IContext<Parameter> adminContext)
 		{
-			if(context == null)
+			if(studentContext == null)
 			{
-				throw new ArgumentNullException("context");
+				throw new ArgumentNullException("studentContext");
 			}
 
-			this.context = context;
+			if(adminContext == null)
+			{
+				throw new ArgumentNullException("adminContext");
+			}
+
+			Students = studentContext;
+			Parameters = adminContext;
 
 			ObservableCollection<StudentViewModel> students = new ObservableCollection<StudentViewModel>();
-			foreach(Student student in context.Students)
+			foreach(Student student in studentContext.Items)
 			{
-				students.Add(new StudentViewModel(student));
+				students.Add(new StudentViewModel(student, studentContext));
 			}
 
-			InquiryWorkspace = new InquiryWorkspaceViewModel();
-			StudentWorkspace = new StudentWorkspaceViewModel(students);
-			AdminWorkspace = new AdminWorkspaceViewModel();
+			InquiryWorkspace = new InquiryWorkspaceViewModel(studentContext);
+			StudentWorkspace = new StudentWorkspaceViewModel(students, studentContext);
+			AdminWorkspace = new AdminWorkspaceViewModel(adminContext);
 
 			SaveCommand = new DelegateCommand(o => Save());
 			LoginCommand = new DelegateCommand(o => Login());
@@ -43,12 +51,13 @@ namespace AdmissionsInformationSystem.ViewModel
 
 		public override void Save()
 		{
-			context.Save();
+			Students.Save();
+			MessageBox.Show("Data saved successfully.");
 		}
 
 		public void Login()
 		{
-
+			MessageBox.Show("Login dialog");
 		}
 	}
 }

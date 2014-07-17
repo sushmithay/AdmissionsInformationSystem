@@ -18,37 +18,27 @@
 					<HeaderedContentControl.Header>
 						<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
 							<TextBlock Margin="2">
-							<Hyperlink Command="{Binding Path=AddStudentCommand}">Add Student</Hyperlink>
-							| <Hyperlink Command="{Binding Path=DeleteStudentCommand}">Delete Student</Hyperlink>
+							<Hyperlink Command="{Binding Path=Add}">Add Student</Hyperlink>
+							| <Hyperlink Command="{Binding Path=Delete}">Delete Student</Hyperlink>
 							</TextBlock>
 						</StackPanel>
 					</HeaderedContentControl.Header>
 
-					<DataGrid SelectedItem="{Binding Path=CurrentStudent, Mode=TwoWay}" ItemsSource="{Binding Path=AllStudents}" AutoGenerateColumns="False" >
-						<DataGrid.Columns>
-							<DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" />
-							<DataGridTextColumn Header="Address" Binding="{Binding Path=Address}" />							
-						</DataGrid.Columns>
+					<DataGrid SelectedItem="{Binding Path=CurrentStudent, Mode=TwoWay}" ItemsSource="{Binding Path=Students}">
+
 					</DataGrid>
 				</HeaderedContentControl>
 			</ScrollViewer>
 		</HeaderedContentControl>
 
-		<HeaderedContentControl Style="{StaticResource SubDisplayArea}" Margin="10,0,0,0" Grid.Column="1" >
+		<HeaderedContentControl Style="{StaticResource SubDisplayArea}" Margin="10,0,0,0" Grid.Column="1">
 			<HeaderedContentControl.Header>
-				Properties
+				Actions
 			</HeaderedContentControl.Header>
 			<ScrollViewer>
-				<StackPanel>
-					<Border Style="{StaticResource DetailBorder}" Margin="5">
-						<ContentControl HorizontalAlignment="Right" Content="{Binding Path=CurrentEmployee}">
-							<ContentControl.Resources>
-								<DataTemplate DataType="{x:Type vm:StudentViewModel}">
-									<v:StudentDetailView />
-								</DataTemplate>
-							</ContentControl.Resources>
-						</ContentControl>
-					</Border>
+				<StackPanel Margin="5">
+					<Button Margin="5" Padding="5" Command="{Binding Path=Accept}" Background="Green">Accept</Button>
+					<Button Margin="5" Padding="5" Command="{Binding Path=Deny}"  Background="Red">Deny</Button>
 				</StackPanel>
 			</ScrollViewer>
 		</HeaderedContentControl>

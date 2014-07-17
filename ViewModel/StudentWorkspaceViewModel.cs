@@ -1,15 +1,34 @@
-﻿using AdmissionsInformationSystem.Data;
+﻿using AdmissionsInformationSystem.Context;
+using AdmissionsInformationSystem.Data;
+using AdmissionsInformationSystem.Model;
 using AdmissionsInformationSystem.Patterns;
 using System;
 using System.Collections.ObjectModel;
 using System.Data.SqlClient;
+using System.Windows;
 using System.Windows.Input;
 
 namespace AdmissionsInformationSystem.ViewModel
 {
 	public class StudentWorkspaceViewModel : ViewModelBase
 	{
-		public StudentWorkspaceViewModel(ObservableCollection<StudentViewModel> students)
+		public ObservableCollection<StudentViewModel> Students { get; set; }
+
+		public StudentViewModel currentStudent { get; set; }
+		public StudentViewModel CurrentStudent
+		{
+			get
+			{
+				return currentStudent;
+			}
+			set
+			{
+				currentStudent = value;
+				OnPropertyChanged("CurrentStudent");
+			}
+		}
+
+		public StudentWorkspaceViewModel(ObservableCollection<StudentViewModel> students, IContext<Student> context)
 		{
 			if(students == null)
 			{
@@ -28,6 +47,9 @@ namespace AdmissionsInformationSystem.ViewModel
 
 			Add = new DelegateCommand(o => AddStudent());
 			Delete = new DelegateCommand(o => DeleteStudent());
+			Accept = new DelegateCommand(o => AcceptStudent());
+			Deny = new DelegateCommand(o => DenyStudent());
+			this.context = context;
 		}
 
 		public override void Save()
@@ -37,33 +59,39 @@ namespace AdmissionsInformationSystem.ViewModel
 			});
 		}
 
-		public ObservableCollection<StudentViewModel> Students { get; set; }
-
-		public StudentViewModel currentStudent { get; set; }
-		public StudentViewModel CurrentStudent
-		{
-			get
-			{
-				return currentStudent;
-			}
-			set
-			{
-				currentStudent = value;
-				OnPropertyChanged("CurrentStudent");
-			}
-		}
-
 		public ICommand Add { get; private set; }
 		public ICommand Delete { get; private set; }
+		public ICommand Accept { get; private set; }
+		public ICommand Deny { get; private set; }
+
+		private IContext<Student> context;
 
 		private void AddStudent()
 		{
-
+			Student student = new Student();
+			context.Insert(student);
+			CurrentStudent = new StudentViewModel(student, context);
+			Students.Add(CurrentStudent);
 		}
 
 		private void DeleteStudent()
 		{
+			if(CurrentStudent != null)
+			{
+				context.Delete(CurrentStudent.Model());
+				Students.Remove(CurrentStudent);
+				CurrentStudent = null;
+			}
+		}
 
+		private void AcceptStudent()
+		{
+			MessageBox.Show("Student Accepted");
+		}
+
+		private void DenyStudent()
+		{
+			MessageBox.Show("Student Denied");
 		}
 	}
 }

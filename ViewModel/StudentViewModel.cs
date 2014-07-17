@@ -1,40 +1,48 @@
-﻿using AdmissionsInformationSystem.Data;
+﻿using AdmissionsInformationSystem.Context;
 using AdmissionsInformationSystem.Model;
 using System;
-using System.Data.SqlClient;
 
 namespace AdmissionsInformationSystem.ViewModel
 {
 	public class StudentViewModel : ViewModelBase
 	{
-		public Student Model { get; set; }
+		private IContext<Student> context;
+		private Student student;
+		public Student Model()
+		{
+			return student;
+		}
 
-		public StudentViewModel(Student student)
+		public StudentViewModel(Student student, IContext<Student> context)
 		{
 			if(student == null)
 			{
 				throw new ArgumentNullException("student");
 			}
 
-			Model = student;
+			if(context == null)
+			{
+				throw new ArgumentNullException("context");
+			}
+
+			this.context = context;
+			this.student = student;
 		}
 
 		public override void Save()
 		{
-			Database.NonQuery("StoredProcName", new[]{
-				new SqlParameter()
-			});
+			context.Update(student);
 		}
 
 		public string SocialSecurityNumber
 		{
 			get
 			{
-				return Model.SocialSecurityNumber;
+				return student.SocialSecurityNumber;
 			}
 			set
 			{
-				Model.SocialSecurityNumber = value;
+				student.SocialSecurityNumber = value;
 				OnPropertyChanged("SocialSecurityNumber");
 			}
 		}
@@ -43,11 +51,11 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return Model.Name;
+				return student.Name;
 			}
 			set
 			{
-				Model.Name = value;
+				student.Name = value;
 				OnPropertyChanged("Name");
 			}
 		}
@@ -56,11 +64,11 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return Model.Address;
+				return student.Address;
 			}
 			set
 			{
-				Model.Address = value;
+				student.Address = value;
 				OnPropertyChanged("Address");
 			}
 		}
@@ -69,11 +77,11 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return Model.Email;
+				return student.Email;
 			}
 			set
 			{
-				Model.Email = value;
+				student.Email = value;
 				OnPropertyChanged("Email");
 			}
 		}
@@ -82,11 +90,11 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return Model.PhoneNumber;
+				return student.PhoneNumber;
 			}
 			set
 			{
-				Model.PhoneNumber = value;
+				student.PhoneNumber = value;
 				OnPropertyChanged("PhoneNumber");
 			}
 		}
@@ -95,11 +103,11 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return Model.GPA;
+				return student.GPA;
 			}
 			set
 			{
-				Model.GPA = value;
+				student.GPA = value;
 				OnPropertyChanged("GPA");
 			}
 		}
@@ -108,11 +116,11 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return Model.SAT;
+				return student.SAT;
 			}
 			set
 			{
-				Model.SAT = value;
+				student.SAT = value;
 				OnPropertyChanged("SAT");
 			}
 		}

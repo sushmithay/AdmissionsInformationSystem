@@ -61,7 +61,7 @@
     </Compile>
     <Compile Include="Context\MySqlObjectSet.cs" />
     <Compile Include="Data\Database.cs" />
-    <Compile Include="Model\Parameters.cs" />
+    <Compile Include="Model\Parameter.cs" />
     <Compile Include="Patterns\IWorkObject.cs" />
     <Compile Include="ViewModel\InquiryWorkspaceViewModel.cs" />
     <Compile Include="ViewModel\AdminWorkspaceViewModel.cs" />
@@ -100,9 +100,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Context\FakeObjectSet.cs" />
-    <Compile Include="Context\FakeStudentContext.cs" />
-    <Compile Include="Context\IStudentContext.cs" />
-    <Compile Include="Context\StudentContext.cs" />
+    <Compile Include="Context\FakeContext.cs" />
+    <Compile Include="Context\IContext.cs" />
+    <Compile Include="Context\Context.cs" />
     <Compile Include="Patterns\DelegateCommand.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />

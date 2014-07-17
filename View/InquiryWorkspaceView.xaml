@@ -19,8 +19,6 @@
 		<TextBlock HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="80" Height="16" Grid.Row="1"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="Middle Initial" VerticalAlignment="Top" Width="80" Height="16" Grid.Row="1"/>
 		<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="&#x9;Thank you for your interest in studying at UNCC. To receive information about academic programs, fill out the form below and click the 'Inquire' button. To pre-apply for admission click the 'Apply' button and your information will be sent to the admissions office for review." VerticalAlignment="Top" Grid.ColumnSpan="4" Width="620" Margin="10,5,0,0" Height="50"/>
-		<Button Content="Inquire" Grid.Column="3" HorizontalAlignment="Left" Margin="10,170,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="20"/>
-		<Button Content="Apply" Grid.Column="3" HorizontalAlignment="Left" Margin="91,170,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="20"/>
 		<TextBox HorizontalAlignment="Left" Height="40" Margin="10,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Grid.Column="1" Grid.Row="1"/>
 		<TextBox HorizontalAlignment="Left" Height="23" Margin="10,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Grid.Column="1" Grid.Row="1"/>
 		<TextBox HorizontalAlignment="Left" Height="23" Margin="10,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" Grid.Column="1" Grid.Row="1"/>
@@ -37,5 +35,7 @@
 		<ComboBox Grid.Column="2" HorizontalAlignment="Left" Margin="115,85,0,0" Grid.Row="1" VerticalAlignment="Top" Width="231" Grid.ColumnSpan="2"/>
 		<ListBox Grid.Column="2" HorizontalAlignment="Left" Height="41" Margin="10,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="336" Grid.ColumnSpan="2"/>
 		<ListBox Grid.Column="2" HorizontalAlignment="Left" Height="41" Margin="10,110,0,0" Grid.Row="1" VerticalAlignment="Top" Width="336" Grid.ColumnSpan="2"/>
+		<Button Content="Inquire" Grid.Column="3" HorizontalAlignment="Left" Margin="10,170,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="20" Command="{Binding Path=InquireCommand}"/>
+		<Button Content="Apply" Grid.Column="3" HorizontalAlignment="Left" Margin="91,170,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Height="20" Command="{Binding Path=ApplyCommand}"/>
 	</Grid>
 </UserControl>

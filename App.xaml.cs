@@ -10,7 +10,8 @@ namespace AdmissionsInformationSystem
 	/// </summary>
 	public partial class App : Application
 	{
-		private IStudentContext context;
+		private IContext<Student> Students;
+		private IContext<Parameter> Parameters;
 		private static bool fakes = true;
 
 		protected override void OnStartup(StartupEventArgs e)
@@ -18,22 +19,25 @@ namespace AdmissionsInformationSystem
 			base.OnStartup(e);
 			if(fakes)
 			{
-				context = ModelGenerator.BuildFakes();
+				Students = ModelGenerator.BuildFakeStudents();
+				Parameters = ModelGenerator.BuildFakeParameters();
 			}
 			else
 			{
 				//connect with mysql database
-				context = null;
+				Students = null;
+				Parameters = null;
 			}
 
-			MainWindowViewModel model = new MainWindowViewModel(context);
+			MainWindowViewModel model = new MainWindowViewModel(Students, Parameters);
 			MainWindow window = new MainWindow { DataContext = model };
 			window.Show();
 		}
 
 		protected override void OnExit(ExitEventArgs e)
 		{
-			context.Dispose();
+			Students.Dispose();
+			Parameters.Dispose();
 			base.OnExit(e);
 		}
 	}

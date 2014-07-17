@@ -6,7 +6,7 @@ namespace AdmissionsInformationSystem.ViewModel
 {
 	public class ParametersViewModel : ViewModelBase
 	{
-		private Parameters model;
+		private Parameter model;
 
 		public override void Save()
 		{
