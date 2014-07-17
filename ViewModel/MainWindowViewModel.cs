@@ -16,8 +16,14 @@ namespace AdmissionsInformationSystem.ViewModel
 
 		private IContext<Student> Students;
 		private IContext<Parameter> Parameters;
+		private IContext<CollegeLife> CollegeLife;
+		private IContext<DegreeProgram> DegreePrograms;
 
-		public MainWindowViewModel(IContext<Student> studentContext, IContext<Parameter> adminContext)
+		public MainWindowViewModel(
+			IContext<Student> studentContext,
+			IContext<Parameter> adminContext,
+			IContext<CollegeLife> collegeLife,
+			IContext<DegreeProgram> degreePrograms)
 		{
 			if(studentContext == null)
 			{
@@ -29,8 +35,20 @@ namespace AdmissionsInformationSystem.ViewModel
 				throw new ArgumentNullException("adminContext");
 			}
 
+			if(collegeLife == null)
+			{
+				throw new ArgumentNullException("collegeLife");
+			}
+
+			if(degreePrograms == null)
+			{
+				throw new ArgumentNullException("degreePrograms");
+			}
+
 			Students = studentContext;
 			Parameters = adminContext;
+			CollegeLife = collegeLife;
+			DegreePrograms = degreePrograms;
 
 			ObservableCollection<StudentViewModel> students = new ObservableCollection<StudentViewModel>();
 			foreach(Student student in studentContext.Items)
@@ -38,9 +56,27 @@ namespace AdmissionsInformationSystem.ViewModel
 				students.Add(new StudentViewModel(student, studentContext));
 			}
 
-			InquiryWorkspace = new InquiryWorkspaceViewModel(studentContext);
+			ObservableCollection<ParameterViewModel> parameters = new ObservableCollection<ParameterViewModel>();
+			foreach(Parameter parameter in adminContext.Items)
+			{
+				parameters.Add(new ParameterViewModel(parameter, adminContext));
+			}
+
+			ObservableCollection<string> interests = new ObservableCollection<string>();
+			foreach(CollegeLife life in collegeLife.Items)
+			{
+				interests.Add(life.Name);
+			}
+
+			ObservableCollection<string> degrees = new ObservableCollection<string>();
+			foreach(DegreeProgram degree in degreePrograms.Items)
+			{
+				degrees.Add(degree.Name);
+			}
+
+			InquiryWorkspace = new InquiryWorkspaceViewModel(studentContext, interests, degrees);
 			StudentWorkspace = new StudentWorkspaceViewModel(students, studentContext);
-			AdminWorkspace = new AdminWorkspaceViewModel(adminContext);
+			AdminWorkspace = new AdminWorkspaceViewModel(parameters, adminContext);
 
 			SaveCommand = new DelegateCommand(o => Save());
 			LoginCommand = new DelegateCommand(o => Login());

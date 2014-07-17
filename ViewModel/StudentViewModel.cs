@@ -47,16 +47,42 @@ namespace AdmissionsInformationSystem.ViewModel
 			}
 		}
 
-		public string Name
+		public string FirstName
 		{
 			get
 			{
-				return student.Name;
+				return student.FirstName;
 			}
 			set
 			{
-				student.Name = value;
-				OnPropertyChanged("Name");
+				student.FirstName = value;
+				OnPropertyChanged("FirstName");
+			}
+		}
+
+		public string MiddleName
+		{
+			get
+			{
+				return student.MiddleName;
+			}
+			set
+			{
+				student.MiddleName = value;
+				OnPropertyChanged("MiddleName");
+			}
+		}
+
+		public string LastName
+		{
+			get
+			{
+				return student.LastName;
+			}
+			set
+			{
+				student.LastName = value;
+				OnPropertyChanged("LastName");
 			}
 		}
 

@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
@@ -61,11 +62,14 @@
     </Compile>
     <Compile Include="Context\MySqlObjectSet.cs" />
     <Compile Include="Data\Database.cs" />
+    <Compile Include="Model\CollegeLife.cs" />
+    <Compile Include="Model\DegreeProgram.cs" />
+    <Compile Include="Model\Term.cs" />
     <Compile Include="Model\Parameter.cs" />
     <Compile Include="Patterns\IWorkObject.cs" />
     <Compile Include="ViewModel\InquiryWorkspaceViewModel.cs" />
     <Compile Include="ViewModel\AdminWorkspaceViewModel.cs" />
-    <Compile Include="ViewModel\ParametersViewModel.cs" />
+    <Compile Include="ViewModel\ParameterViewModel.cs" />
     <Compile Include="ViewModel\StudentViewModel.cs" />
     <Compile Include="View\AdminWorkspaceView.xaml.cs">
       <DependentUpon>AdminWorkspaceView.xaml</DependentUpon>

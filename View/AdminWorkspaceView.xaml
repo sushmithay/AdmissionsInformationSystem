@@ -8,40 +8,34 @@
 			<RowDefinition Height="35*"/>
 		</Grid.RowDefinitions>
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="2*"/>
-			<ColumnDefinition Width="3*"/>
-			<ColumnDefinition Width="5*"/>
-		</Grid.ColumnDefinitions>
-		<Slider HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Width="172" Grid.Column="1" Grid.Row="1" Height="18"/>
-		<Slider Grid.Column="1" HorizontalAlignment="Left" Margin="10,55,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" Height="18"/>
-		<TextBlock HorizontalAlignment="Left" Margin="10,32,0,0" Grid.Row="1" TextWrapping="Wrap" Text="GPA" VerticalAlignment="Top" Width="108" Height="16"/>
-		<TextBlock HorizontalAlignment="Left" Margin="10,55,0,0" Grid.Row="1" TextWrapping="Wrap" Text="SAT" VerticalAlignment="Top" Width="108" Height="16"/>
+			<ColumnDefinition Width="13*"/>
+			<ColumnDefinition Width="51*"/>
+			<ColumnDefinition Width="64*"/>
+		</Grid.ColumnDefinitions>		
+		<TextBlock HorizontalAlignment="Left" Margin="10,32,0,0" Grid.Row="1" TextWrapping="Wrap" Text="GPA" VerticalAlignment="Top" Width="108" Height="16" Grid.ColumnSpan="2"/>
+		<TextBlock HorizontalAlignment="Left" Margin="10,55,0,0" Grid.Row="1" TextWrapping="Wrap" Text="SAT" VerticalAlignment="Top" Width="108" Height="16" Grid.ColumnSpan="2"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,5,0,1" TextWrapping="Wrap" Text="&#x9;Use this page to adjust properties and weight factors for the desirability measurement and other administrative tasks. Desirability measurement is a rolling ranking of current applicants based on several factors and their weights. Weights can be adjusted based on the school's current enrollment and availability. Desirability is calculated both when a student submits an application and when administrators request a student record search." VerticalAlignment="Stretch" Grid.ColumnSpan="3" Width="620"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Application Response Email Message" VerticalAlignment="Top" Width="300" Height="16" Grid.Column="2"/>
-		<TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Inquiry Response Email Message" VerticalAlignment="Top" Width="300" Height="16" Grid.ColumnSpan="2"/>
-		<RichTextBox Grid.Column="2" HorizontalAlignment="Left" Height="63" Margin="10,37,0,0" Grid.Row="2" VerticalAlignment="Top" Width="300">
-			<FlowDocument>
-				<Paragraph>
-					<Run/>
-				</Paragraph>
-			</FlowDocument>
-		</RichTextBox>
-		<RichTextBox HorizontalAlignment="Left" Height="63" Margin="10,37,0,0" Grid.Row="2" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="2">
-			<FlowDocument>
-				<Paragraph>
-					<Run/>
-				</Paragraph>
-			</FlowDocument>
-		</RichTextBox>
-		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Metric" VerticalAlignment="Top" Width="108" Height="16"/>
+		<TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Inquiry Response Email Message" VerticalAlignment="Top" Width="300" Height="16" Grid.ColumnSpan="2"/>		
+		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Metric" VerticalAlignment="Top" Width="108" Height="16" Grid.ColumnSpan="2"/>
 		<TextBlock HorizontalAlignment="Left" Margin="77,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Weight" VerticalAlignment="Top" Width="44" Height="16" Grid.Column="1"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="L" VerticalAlignment="Top" Width="10" Height="16" Grid.Column="1"/>
 		<TextBlock HorizontalAlignment="Left" Margin="172,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="H" VerticalAlignment="Top" Width="10" Height="16" Grid.Column="1"/>
-		<Separator HorizontalAlignment="Left" Height="16" Margin="0,18,0,0" Grid.Row="1" VerticalAlignment="Top" Width="640" Grid.ColumnSpan="3"/>
-		<TextBlock HorizontalAlignment="Left" Margin="84,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Geographical Preference" VerticalAlignment="Top" Width="138" Height="16" Grid.Column="2"/>
+		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="L" VerticalAlignment="Top" Width="10" Height="16" Grid.Column="1"/>
+		<TextBlock HorizontalAlignment="Left" Margin="172,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="H" VerticalAlignment="Top" Width="10" Height="16" Grid.Column="1"/>
+		<TextBlock HorizontalAlignment="Left" Margin="112,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="H" VerticalAlignment="Top" Width="10" Height="16" Grid.Column="2" RenderTransformOrigin="18.8,0.688"/>
+		<TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="220,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Threshold" VerticalAlignment="Top" Width="142" Height="16" Grid.Column="1" Grid.ColumnSpan="2"/>
+		<TextBlock HorizontalAlignment="Left" Margin="205,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="L" VerticalAlignment="Top" Width="10" Height="16" Grid.Column="1"/>		
+		<TextBlock HorizontalAlignment="Left" Margin="152,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Geographical Preference" VerticalAlignment="Top" Width="138" Height="16" Grid.Column="2"/>
 		<Separator HorizontalAlignment="Left" Height="16" Margin="0,21,0,0" Grid.Row="2" VerticalAlignment="Top" Width="640" Grid.ColumnSpan="3"/>
-		<RadioButton Content="Prefer In-state" Grid.Column="2" HorizontalAlignment="Left" Margin="84,32,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-		<RadioButton Content="Prefer Out-of-state" Grid.Column="2" HorizontalAlignment="Left" Margin="84,53,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-
+		<Separator HorizontalAlignment="Left" Height="16" Margin="0,18,0,0" Grid.Row="1" VerticalAlignment="Top" Width="640" Grid.ColumnSpan="3"/>
+		<RadioButton Command="{Binding Path=InState}" Content="Prefer In-state" Grid.Column="2" HorizontalAlignment="Left" Margin="152,32,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="94"/>
+		<RadioButton Command="{Binding Path=OutOfState}" Content="Prefer Out-of-state" Grid.Column="2" HorizontalAlignment="Left" Margin="152,52,0,0" Grid.Row="1" VerticalAlignment="Top" Height="15" Width="120"/>
+		<Slider Value="{Binding Path=CurrentParameter.SATThreshold}" Minimum="0" Maximum="1600" Grid.Column="1" HorizontalAlignment="Left" Margin="205,55,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" Height="18" Grid.ColumnSpan="2"/>
+		<Slider Value="{Binding Path=CurrentParameter.GPAThreshold}" Minimum="0" Maximum="4.0" HorizontalAlignment="Left" Margin="205,32,0,0" VerticalAlignment="Top" Width="172" Grid.Column="1" Grid.Row="1" Height="18" Grid.ColumnSpan="2"/>
+		<Slider Value="{Binding Path=CurrentParameter.GPAWeight}" Minimum="0" Maximum="1" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Width="172" Grid.Column="1" Grid.Row="1" Height="18"/>
+		<Slider Value="{Binding Path=CurrentParameter.SATWeight}" Minimum="0" Maximum="1" Grid.Column="1" HorizontalAlignment="Left" Margin="10,55,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" Height="18"/>
+		<TextBox Text="{Binding Path=CurrentParameter.ApplicationResponse}" Grid.Column="2" HorizontalAlignment="Left" Height="63" Margin="10,37,0,0" Grid.Row="2" VerticalAlignment="Top" Width="300"/>
+		<TextBox Text="{Binding Path=CurrentParameter.InquiryResponse}" HorizontalAlignment="Left" Height="63" Margin="10,37,0,0" Grid.Row="2" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="2"/>
 	</Grid>
 </UserControl>

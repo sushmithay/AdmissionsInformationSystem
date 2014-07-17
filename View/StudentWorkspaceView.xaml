@@ -15,15 +15,6 @@
 			</HeaderedContentControl.Header>
 			<ScrollViewer>
 				<HeaderedContentControl>
-					<HeaderedContentControl.Header>
-						<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-							<TextBlock Margin="2">
-							<Hyperlink Command="{Binding Path=Add}">Add Student</Hyperlink>
-							| <Hyperlink Command="{Binding Path=Delete}">Delete Student</Hyperlink>
-							</TextBlock>
-						</StackPanel>
-					</HeaderedContentControl.Header>
-
 					<DataGrid SelectedItem="{Binding Path=CurrentStudent, Mode=TwoWay}" ItemsSource="{Binding Path=Students}">
 
 					</DataGrid>
@@ -37,8 +28,10 @@
 			</HeaderedContentControl.Header>
 			<ScrollViewer>
 				<StackPanel Margin="5">
-					<Button Margin="5" Padding="5" Command="{Binding Path=Accept}" Background="Green">Accept</Button>
-					<Button Margin="5" Padding="5" Command="{Binding Path=Deny}"  Background="Red">Deny</Button>
+					<Button Margin="5" Padding="5" Command="{Binding Path=Accept}" Background="#FF00DE00">Accept</Button>
+					<Button Margin="5" Padding="5" Command="{Binding Path=Deny}"  Background="#FFD30000">Deny</Button>
+					<Button Margin="5" Padding="5" Command="{Binding Path=Add}"  Background="White">Add Student</Button>
+					<Button Margin="5" Padding="5" Command="{Binding Path=Delete}"  Background="White">Delete Student</Button>
 				</StackPanel>
 			</ScrollViewer>
 		</HeaderedContentControl>

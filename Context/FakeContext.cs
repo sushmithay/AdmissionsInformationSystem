@@ -46,7 +46,7 @@ namespace AdmissionsInformationSystem.Context
 
 		public void Update(T item)
 		{
-			throw new NotImplementedException();
+
 		}
 
 		public void Delete(T item)

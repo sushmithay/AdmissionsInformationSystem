@@ -1,10 +1,8 @@
 ﻿using AdmissionsInformationSystem.Context;
-using AdmissionsInformationSystem.Data;
 using AdmissionsInformationSystem.Model;
 using AdmissionsInformationSystem.Patterns;
 using System;
 using System.Collections.ObjectModel;
-using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Input;
 
@@ -54,9 +52,7 @@ namespace AdmissionsInformationSystem.ViewModel
 
 		public override void Save()
 		{
-			Database.NonQuery("StoredProcName", new[]{
-				new SqlParameter()
-			});
+			context.Update(currentStudent.Model());
 		}
 
 		public ICommand Add { get; private set; }
