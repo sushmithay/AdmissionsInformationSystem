@@ -10,11 +10,11 @@ namespace AdmissionsInformationSystem.Model
 			return new FakeContext<Student>(
 				new List<Student> {
 					new Student { 
-						SocialSecurityNumber = "704381801",
+						SocialSecurityNumber = "234-11-2334",
 						FirstName = "Phani",
 						MiddleName = "Bonda",
 						LastName = "Ndra",
-						Address = "Albmarle road Charlotte NC, 28262",
+						Address = "Albmarle Rd. Charlotte NC, 28262",
 						InState = "Yes",
 						Email = "phani@uncc.edu",
 						PhoneNumber = "(342) 342-1243",
@@ -22,11 +22,11 @@ namespace AdmissionsInformationSystem.Model
 						SAT = 1600
 					},
 					new Student { 
-						SocialSecurityNumber = "704763829",
+						SocialSecurityNumber = "342-41-2332",
 						FirstName = "Daniel",
 						MiddleName = "",
 						LastName = "Scroggins",
-						Address = "Jhon Krik dr Atlanta GA, 28275",
+						Address = "John Krik Dr. Atlanta GA, 28275",
 						InState = "Yes",
 						Email = "daniel@uncc.edu",
 						PhoneNumber = "(342) 342-1423",
@@ -34,7 +34,7 @@ namespace AdmissionsInformationSystem.Model
 						SAT = 1234
 					},
 					new Student { 
-						SocialSecurityNumber = "704381801",
+						SocialSecurityNumber = "324-23-412",
 						FirstName = "Roxolana",
 						MiddleName = "",
 						LastName = "Buckle",
@@ -46,7 +46,7 @@ namespace AdmissionsInformationSystem.Model
 						SAT = 4312
 					},
 					new Student { 
-						SocialSecurityNumber = "704381801",
+						SocialSecurityNumber = "122-34-322",
 						FirstName = "Virginia",
 						MiddleName = "",
 						LastName = "Kern",
@@ -58,7 +58,7 @@ namespace AdmissionsInformationSystem.Model
 						SAT = 4231
 					},
 					new Student { 
-						SocialSecurityNumber = "704381801",
+						SocialSecurityNumber = "124-34-232",
 						FirstName = "Swetha",
 						MiddleName = "Metireddy",
 						LastName = "Keerthi",
@@ -70,7 +70,7 @@ namespace AdmissionsInformationSystem.Model
 						SAT = 1243
 					},
 					new Student { 
-						SocialSecurityNumber = "704381801",
+						SocialSecurityNumber = "432-12-3412",
 						FirstName = "Sushmita",
 						MiddleName = "",
 						LastName = "Yalla",
@@ -82,7 +82,7 @@ namespace AdmissionsInformationSystem.Model
 						SAT = 1432
 					},
 					new Student { 
-						SocialSecurityNumber = "704381801",
+						SocialSecurityNumber = "324-14-2312",
 						FirstName = "Krishna",
 						MiddleName = "",
 						LastName = "Chaitanya",
