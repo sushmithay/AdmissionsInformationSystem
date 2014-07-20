@@ -21,19 +21,5 @@
 				</HeaderedContentControl>
 			</ScrollViewer>
 		</HeaderedContentControl>
-
-		<HeaderedContentControl Style="{StaticResource SubDisplayArea}" Margin="10,0,0,0" Grid.Column="1">
-			<HeaderedContentControl.Header>
-				Actions
-			</HeaderedContentControl.Header>
-			<ScrollViewer>
-				<StackPanel Margin="5">
-					<Button Margin="5" Padding="5" Command="{Binding Path=Accept}" Background="#FF00DE00">Accept</Button>
-					<Button Margin="5" Padding="5" Command="{Binding Path=Deny}"  Background="#FFD30000">Deny</Button>
-					<Button Margin="5" Padding="5" Command="{Binding Path=Add}"  Background="White">Add Student</Button>
-					<Button Margin="5" Padding="5" Command="{Binding Path=Delete}"  Background="White">Delete Student</Button>
-				</StackPanel>
-			</ScrollViewer>
-		</HeaderedContentControl>
 	</Grid>
 </UserControl>

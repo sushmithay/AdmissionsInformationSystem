@@ -2,12 +2,10 @@
 {
 	public class Parameter
 	{
-		public float GPAThreshold { get; set; }
+		public decimal GPAThreshold { get; set; }
 		public int SATThreshold { get; set; }
-		public float GPAWeight { get; set; }
-		public float SATWeight { get; set; }
-		public bool PreferInState { get; set; }
-		public string InquiryResponse { get; set; }
-		public string ApplicationResponse { get; set; }
+		public decimal GPAWeight { get; set; }
+		public decimal SATWeight { get; set; }
+		public decimal OutOfStateWeight { get; set; }
 	}
 }

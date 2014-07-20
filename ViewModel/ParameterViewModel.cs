@@ -34,11 +34,11 @@ namespace AdmissionsInformationSystem.ViewModel
 			context.Update(parameter);
 		}
 
-		public float GPAThreshold
+		public decimal GPAThreshold
 		{
 			get
 			{
-				return parameter.GPAThreshold;
+				return decimal.Round(parameter.GPAThreshold, 3);
 			}
 			set
 			{
@@ -60,11 +60,11 @@ namespace AdmissionsInformationSystem.ViewModel
 			}
 		}
 
-		public float GPAWeight
+		public decimal GPAWeight
 		{
 			get
 			{
-				return parameter.GPAWeight;
+				return decimal.Round(parameter.GPAWeight, 3);
 			}
 			set
 			{
@@ -73,11 +73,11 @@ namespace AdmissionsInformationSystem.ViewModel
 			}
 		}
 
-		public float SATWeight
+		public decimal SATWeight
 		{
 			get
 			{
-				return parameter.SATWeight;
+				return decimal.Round(parameter.SATWeight, 3);
 			}
 			set
 			{
@@ -87,42 +87,16 @@ namespace AdmissionsInformationSystem.ViewModel
 
 		}
 
-		public bool PreferInState
+		public decimal OutOfStateWeight
 		{
 			get
 			{
-				return parameter.PreferInState;
+				return decimal.Round(parameter.OutOfStateWeight, 3);
 			}
 			set
 			{
-				parameter.PreferInState = value;
-				OnPropertyChanged("PreferInState");
-			}
-		}
-
-		public string InquiryResponse
-		{
-			get
-			{
-				return parameter.InquiryResponse;
-			}
-			set
-			{
-				parameter.InquiryResponse = value;
-				OnPropertyChanged("InquiryResponse");
-			}
-		}
-
-		public string ApplicationResponse
-		{
-			get
-			{
-				return parameter.ApplicationResponse;
-			}
-			set
-			{
-				parameter.ApplicationResponse = value;
-				OnPropertyChanged("ApplicationResponse");
+				parameter.OutOfStateWeight = value;
+				OnPropertyChanged("OutOfStateWeight");
 			}
 		}
 	}

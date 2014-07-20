@@ -101,13 +101,11 @@ namespace AdmissionsInformationSystem.Model
 		{
 			return new FakeContext<Parameter>(new List<Parameter> {
 				new Parameter {
-					GPAThreshold = 3.0f,
-					GPAWeight = .3f,					   
+					GPAThreshold = 3.0M,
+					GPAWeight = .3M,					   
 					SATThreshold = 1000,
-					SATWeight = .6f,
-					PreferInState = true,
-					ApplicationResponse = "You've been accepted.",
-					InquiryResponse = "You've requested information."
+					SATWeight = .6M,
+					OutOfStateWeight = .5M
 				}
 			});
 		}

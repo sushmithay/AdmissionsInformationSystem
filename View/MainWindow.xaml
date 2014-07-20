@@ -4,7 +4,7 @@
 		xmlns:v="clr-namespace:AdmissionsInformationSystem.View"
 		xmlns:vm="clr-namespace:AdmissionsInformationSystem.ViewModel"
 		xmlns:local="clr-namespace:AdmissionsInformationSystem"
-		Title="Admissions Information System" Height="400" Width="700" ResizeMode="NoResize">
+		Title="Admissions Information System" Height="480" Width="640" ResizeMode="NoResize">
 
 	<Window.Resources>
 		<DataTemplate DataType="{x:Type vm:InquiryWorkspaceViewModel}">
@@ -29,7 +29,7 @@
 					<GradientStop Color="#FF078960"/>
 				</LinearGradientBrush>
 			</local:Banner.Foreground>
-		</local:Banner>	
+		</local:Banner>
 
 		<TabControl Padding="0" Margin="10,55,10,10">
 			<TabItem Width="100">
@@ -37,17 +37,16 @@
 				<ContentControl Margin="10" Content="{Binding Path=.InquiryWorkspace}" />
 			</TabItem>
 			<TabItem Width="100">
-				<TabItem.Header>Search</TabItem.Header>
+				<TabItem.Header>Students</TabItem.Header>
 				<ContentControl Margin="10" Content="{Binding Path=.StudentWorkspace}" />
 			</TabItem>
 			<TabItem Width="100">
 				<TabItem.Header>Admin</TabItem.Header>
 				<ContentControl Margin="10" Content="{Binding Path=.AdminWorkspace}" />
-			</TabItem>			
+			</TabItem>
 		</TabControl>
 
-		<TextBlock Width="150" Height="20" Panel.ZIndex="100" VerticalAlignment="Top" Margin="0,55,220,0" HorizontalAlignment="Right" TextAlignment="Right" Text="Welcome, User!" />
-		<Button Width="100" Height="20" Panel.ZIndex="100" VerticalAlignment="Top" Margin="0,55,115,0" HorizontalAlignment="Right" Command="{Binding Path=LoginCommand}">Login</Button>
-		<Button Width="100" Height="20" Panel.ZIndex="100" VerticalAlignment="Top" Margin="0,55,10,0" HorizontalAlignment="Right" Command="{Binding Path=SaveCommand}">Save</Button>
+		<TextBlock Width="182" Height="20" Panel.ZIndex="100" VerticalAlignment="Top" Margin="0,55,120,0" HorizontalAlignment="Right" TextAlignment="Right" Text="Welcome, User!" />
+		<Button Width="100" Height="20" Panel.ZIndex="100" VerticalAlignment="Top" Margin="0,55,15,0" HorizontalAlignment="Right" Command="{Binding Path=LoginCommand}">Login</Button>
 	</Grid>
 </Window>

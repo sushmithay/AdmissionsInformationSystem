@@ -48,30 +48,11 @@ namespace AdmissionsInformationSystem.ViewModel
 			{
 				CurrentParameter = new ParameterViewModel(context.Create(), context);
 			}
-
-			InState = new DelegateCommand(o => UpdateInState());
-			OutOfState = new DelegateCommand(o => UpdateOutOfState());
-			this.context = context;
 		}
-
-		public ICommand InState { get; private set; }
-		public ICommand OutOfState { get; private set; }
 
 		public override void Save()
 		{
 			context.Update(currentParameter.Model());
-		}
-
-		public void UpdateInState()
-		{
-			CurrentParameter.PreferInState = true;
-			Save();
-		}
-
-		public void UpdateOutOfState()
-		{
-			CurrentParameter.PreferInState = false;
-			Save();
 		}
 	}
 }
