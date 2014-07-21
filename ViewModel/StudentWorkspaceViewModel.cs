@@ -26,7 +26,7 @@ namespace AdmissionsInformationSystem.ViewModel
 			}
 		}
 
-		public StudentWorkspaceViewModel(ObservableCollection<StudentViewModel> students, IContext<Student> context)
+		public StudentWorkspaceViewModel(ObservableCollection<StudentViewModel> students, StudentContext context)
 		{
 			if(students == null)
 			{
@@ -52,7 +52,8 @@ namespace AdmissionsInformationSystem.ViewModel
 
 		public override void Save()
 		{
-			context.Update(currentStudent.Model());
+			throw new NotImplementedException(); //add term
+			context.Update(currentStudent.Model(), "term");
 		}
 
 		public ICommand Add { get; private set; }
@@ -60,7 +61,7 @@ namespace AdmissionsInformationSystem.ViewModel
 		public ICommand Accept { get; private set; }
 		public ICommand Deny { get; private set; }
 
-		private IContext<Student> context;
+		private StudentContext context;
 
 		private void AddStudent()
 		{

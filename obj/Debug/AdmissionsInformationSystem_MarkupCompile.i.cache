@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\App.xaml
-6-79947876
+7-978103211
 
-351741613030
+38-890515279
 16821862922
-Banner.xaml;View\AdminWorkspaceView.xaml;View\InquiryWorkspaceView.xaml;View\MainWindow.xaml;View\StudentDetailView.xaml;View\StudentWorkspaceView.xaml;
+Banner.xaml;View\AdminWorkspaceView.xaml;View\InquiryWorkspaceView.xaml;View\LoginWindow.xaml;View\MainWindow.xaml;View\StudentDetailView.xaml;View\StudentWorkspaceView.xaml;
 
-False
+True
 

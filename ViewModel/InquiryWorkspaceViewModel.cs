@@ -10,15 +10,16 @@ namespace AdmissionsInformationSystem.ViewModel
 {
 	public class InquiryWorkspaceViewModel : ViewModelBase
 	{
-		public ObservableCollection<string> CollegeLife { get; set; }
-		public ObservableCollection<string> DegreePrograms { get; set; }
+		public ObservableCollection<CollegeLife> CollegeLife { get; set; }
+		public ObservableCollection<DegreeProgram> DegreePrograms { get; set; }
+		public ObservableCollection<Term> Terms { get; set; }
+		public StudentViewModel Student;
 		private IContext<Student> context;
-		private StudentViewModel student;
 
 		public InquiryWorkspaceViewModel(
-			IContext<Student> context,
-			ObservableCollection<string> collegeLife,
-			ObservableCollection<string> degreePrograms)
+			StudentContext context,
+			ObservableCollection<CollegeLife> collegeLife,
+			ObservableCollection<DegreeProgram> degreePrograms)
 		{
 			if(context == null)
 			{
@@ -39,7 +40,7 @@ namespace AdmissionsInformationSystem.ViewModel
 			DegreePrograms = degreePrograms;
 			this.context = context;
 
-			student = new StudentViewModel(context.Create(), context);
+			Student = new StudentViewModel(context.Create(), context);
 
 			InquireCommand = new DelegateCommand(o => Inquire());
 			ApplyCommand = new DelegateCommand(o => Apply());
@@ -50,19 +51,19 @@ namespace AdmissionsInformationSystem.ViewModel
 
 		private void Inquire()
 		{
-			MessageBox.Show("Inquiry Email");
+			MessageBox.Show("Thank you for inquiring.");
 			Save();
 		}
 
 		private void Apply()
 		{
-			MessageBox.Show("Application Email");
+			MessageBox.Show("Thank you for applying.");
 			Save();
 		}
 
 		public override void Save()
 		{
-			student.Save();
+			Student.Save();
 		}
 	}
 }

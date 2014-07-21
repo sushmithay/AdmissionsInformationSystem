@@ -61,6 +61,7 @@
       <DependentUpon>Banner.xaml</DependentUpon>
     </Compile>
     <Compile Include="Context\MySqlObjectSet.cs" />
+    <Compile Include="Context\ParameterContext.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Model\CollegeLife.cs" />
     <Compile Include="Model\DegreeProgram.cs" />
@@ -76,6 +77,10 @@
     </Compile>
     <Compile Include="View\InquiryWorkspaceView.xaml.cs">
       <DependentUpon>InquiryWorkspaceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="View\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\StudentDetailView.xaml.cs">
       <DependentUpon>StudentDetailView.xaml</DependentUpon>
@@ -95,6 +100,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -106,7 +115,7 @@
     <Compile Include="Context\FakeObjectSet.cs" />
     <Compile Include="Context\FakeContext.cs" />
     <Compile Include="Context\IContext.cs" />
-    <Compile Include="Context\Context.cs" />
+    <Compile Include="Context\StudentContext.cs" />
     <Compile Include="Patterns\DelegateCommand.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />

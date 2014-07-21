@@ -14,16 +14,16 @@ namespace AdmissionsInformationSystem.ViewModel
 		public StudentWorkspaceViewModel StudentWorkspace { get; private set; }
 		public AdminWorkspaceViewModel AdminWorkspace { get; private set; }
 
-		private IContext<Student> Students;
-		private IContext<Parameter> Parameters;
-		private IContext<CollegeLife> CollegeLife;
-		private IContext<DegreeProgram> DegreePrograms;
+		private StudentContext Students;
+		private ParameterContext Parameters;
+		private ObservableCollection<CollegeLife> CollegeLife;
+		private ObservableCollection<DegreeProgram> DegreePrograms;
 
 		public MainWindowViewModel(
-			IContext<Student> studentContext,
-			IContext<Parameter> adminContext,
-			IContext<CollegeLife> collegeLife,
-			IContext<DegreeProgram> degreePrograms)
+			StudentContext studentContext,
+			ParameterContext adminContext,
+			ObservableCollection<CollegeLife> collegeLife,
+			ObservableCollection<DegreeProgram> degreePrograms)
 		{
 			if(studentContext == null)
 			{
@@ -62,38 +62,19 @@ namespace AdmissionsInformationSystem.ViewModel
 				parameters.Add(new ParameterViewModel(parameter, adminContext));
 			}
 
-			ObservableCollection<string> interests = new ObservableCollection<string>();
-			foreach(CollegeLife life in collegeLife.Items)
-			{
-				interests.Add(life.Name);
-			}
-
-			ObservableCollection<string> degrees = new ObservableCollection<string>();
-			foreach(DegreeProgram degree in degreePrograms.Items)
-			{
-				degrees.Add(degree.Name);
-			}
-
-			InquiryWorkspace = new InquiryWorkspaceViewModel(studentContext, interests, degrees);
+			InquiryWorkspace = new InquiryWorkspaceViewModel(studentContext, collegeLife, degreePrograms);
 			StudentWorkspace = new StudentWorkspaceViewModel(students, studentContext);
 			AdminWorkspace = new AdminWorkspaceViewModel(parameters, adminContext);
 
 			SaveCommand = new DelegateCommand(o => Save());
-			LoginCommand = new DelegateCommand(o => Login());
 		}
 
 		public ICommand SaveCommand { get; private set; }
-		public ICommand LoginCommand { get; private set; }
 
 		public override void Save()
 		{
 			Students.Save();
 			MessageBox.Show("Data saved successfully.");
-		}
-
-		public void Login()
-		{
-			MessageBox.Show("Login dialog");
 		}
 	}
 }

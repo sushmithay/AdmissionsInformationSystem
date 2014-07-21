@@ -1,16 +1,15 @@
 ﻿using AdmissionsInformationSystem.Context;
-using AdmissionsInformationSystem.Model;
-using AdmissionsInformationSystem.Patterns;
 using System;
 using System.Collections.ObjectModel;
-using System.Windows.Input;
 
 namespace AdmissionsInformationSystem.ViewModel
 {
 	public class AdminWorkspaceViewModel : ViewModelBase
 	{
-		private IContext<Parameter> context;
-		private ObservableCollection<ParameterViewModel> parameters;
+		public ObservableCollection<ParameterViewModel> parameters { get; set; }
+		public ObservableCollection<string> Terms { get; set; }
+
+		private ParameterContext context;
 		private ParameterViewModel currentParameter;
 		public ParameterViewModel CurrentParameter
 		{
@@ -25,7 +24,7 @@ namespace AdmissionsInformationSystem.ViewModel
 			}
 		}
 
-		public AdminWorkspaceViewModel(ObservableCollection<ParameterViewModel> parameters, IContext<Parameter> context)
+		public AdminWorkspaceViewModel(ObservableCollection<ParameterViewModel> parameters, ParameterContext context)
 		{
 			if(context == null)
 			{

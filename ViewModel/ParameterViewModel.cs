@@ -6,14 +6,14 @@ namespace AdmissionsInformationSystem.ViewModel
 {
 	public class ParameterViewModel : ViewModelBase
 	{
-		private IContext<Parameter> context;
+		private ParameterContext context;
 		private Parameter parameter;
 		public Parameter Model()
 		{
 			return parameter;
 		}
 
-		public ParameterViewModel(Parameter parameter, IContext<Parameter> context)
+		public ParameterViewModel(Parameter parameter, ParameterContext context)
 		{
 			if(parameter == null)
 			{

@@ -31,8 +31,8 @@
 		<TextBlock HorizontalAlignment="Left" Margin="10,217,0,0" TextWrapping="Wrap" Text="GPA" VerticalAlignment="Top" Width="30" Height="16" Grid.Row="1" Grid.Column="2"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,108,0,0" TextWrapping="Wrap" Text="Degree Programs" VerticalAlignment="Top" Width="100" Height="16" Grid.Row="1" Grid.Column="2"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,8,0,0" TextWrapping="Wrap" Text="Personal Interests" VerticalAlignment="Top" Width="100" Height="16" Grid.Row="1" Grid.Column="2"/>
-		<ListBox ItemsSource="{Binding Path=DegreePrograms}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,129,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Grid.ColumnSpan="2" Height="70"/>
-		<ListBox ItemsSource="{Binding Path=CollegeLife}" HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Grid.ColumnSpan="2" Height="70" Grid.Column="2"/>
+		<ListBox SelectionMode="Multiple" ItemsSource="{Binding Path=DegreePrograms}" Grid.Column="2" HorizontalAlignment="Left" Margin="10,129,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Grid.ColumnSpan="2" Height="70"/>
+		<ListBox SelectionMode="Multiple" ItemsSource="{Binding Path=CollegeLife}" HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Grid.ColumnSpan="2" Height="70" Grid.Column="2"/>
 		<Button Content="Inquire" Grid.Column="3" HorizontalAlignment="Left" Margin="44,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="20" Command="{Binding Path=InquireCommand}"/>
 		<Button Content="Apply" Grid.Column="3" HorizontalAlignment="Left" Margin="44,248,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="20" Command="{Binding Path=ApplyCommand}"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,202,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" Width="80" Height="16" Grid.Row="1" Grid.ColumnSpan="2"/>

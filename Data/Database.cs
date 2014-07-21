@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.OleDb;
 
 namespace AdmissionsInformationSystem.Data
 {
@@ -8,11 +8,10 @@ namespace AdmissionsInformationSystem.Data
 	{
 		public static string ConnectionString { get; set; }
 
-		public static DataTable Query(string prodedure, CommandType type = CommandType.Text, params SqlParameter[] parameters)
+		public static DataTable Query(string prodedure, params OleDbParameter[] parameters)
 		{
 			return Execute<DataTable>(command => {
-				command.CommandType = type;
-				using(SqlDataAdapter adapter = new SqlDataAdapter(command))
+				using(OleDbDataAdapter adapter = new OleDbDataAdapter(command))
 				{
 					DataTable table = new DataTable();
 					adapter.Fill(table);
@@ -21,28 +20,35 @@ namespace AdmissionsInformationSystem.Data
 			}, parameters);
 		}
 
-		public static int NonQuery(string sql, params SqlParameter[] parameters)
+		public static DataTable Proc(string prodedure, params OleDbParameter[] parameters)
 		{
-			return Execute<int>(command => {
-				command.CommandType = CommandType.Text;
-				return command.ExecuteNonQuery();
+			return Execute<DataTable>(command => {
+				command.CommandType = CommandType.StoredProcedure;
+				using(OleDbDataAdapter adapter = new OleDbDataAdapter(command))
+				{
+					DataTable table = new DataTable();
+					adapter.Fill(table);
+					return table;
+				}
 			}, parameters);
 		}
 
-		public static object Scalar(string sql, params SqlParameter[] parameters)
+		public static int NonQuery(string sql, params OleDbParameter[] parameters)
 		{
-			return Execute<object>(command => {
-				command.CommandType = CommandType.Text;
-				return command.ExecuteScalar();
-			}, parameters);
+			return Execute<int>(command => { return command.ExecuteNonQuery(); }, parameters);
 		}
 
-		private static T Execute<T>(Func<SqlCommand, T> query, params SqlParameter[] parameters)
+		public static object Scalar(string sql, params OleDbParameter[] parameters)
 		{
-			using(SqlConnection connection = new SqlConnection(ConnectionString))
+			return Execute<object>(command => { return command.ExecuteScalar(); }, parameters);
+		}
+
+		private static T Execute<T>(Func<OleDbCommand, T> query, params OleDbParameter[] parameters)
+		{
+			using(OleDbConnection connection = new OleDbConnection(ConnectionString))
 			{
 				connection.Open();
-				using(SqlCommand command = new SqlCommand())
+				using(OleDbCommand command = new OleDbCommand())
 				{
 					if(parameters != null && parameters.Length > 0)
 					{
@@ -50,7 +56,7 @@ namespace AdmissionsInformationSystem.Data
 					}
 
 					command.Connection = connection;
-					using(SqlTransaction transaction = connection.BeginTransaction(IsolationLevel.ReadCommitted))
+					using(OleDbTransaction transaction = connection.BeginTransaction(IsolationLevel.ReadCommitted))
 					{
 						command.Transaction = transaction;
 						try

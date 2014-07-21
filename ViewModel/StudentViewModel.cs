@@ -6,14 +6,19 @@ namespace AdmissionsInformationSystem.ViewModel
 {
 	public class StudentViewModel : ViewModelBase
 	{
-		private IContext<Student> context;
+		private StudentContext context;
 		private Student student;
 		public Student Model()
 		{
 			return student;
 		}
 
-		public StudentViewModel(Student student, IContext<Student> context)
+		public void UpdateModel(Student model)
+		{
+			student = model;
+		}
+
+		public StudentViewModel(Student student, StudentContext context)
 		{
 			if(student == null)
 			{
@@ -86,16 +91,55 @@ namespace AdmissionsInformationSystem.ViewModel
 			}
 		}
 
-		public string Address
+		public string StreetAddress
 		{
 			get
 			{
-				return student.Address;
+				return student.StreetAddress;
 			}
 			set
 			{
-				student.Address = value;
-				OnPropertyChanged("Address");
+				student.StreetAddress = value;
+				OnPropertyChanged("StreetAddress");
+			}
+		}
+
+		public string City
+		{
+			get
+			{
+				return student.City;
+			}
+			set
+			{
+				student.City = value;
+				OnPropertyChanged("City");
+			}
+		}
+
+		public string State
+		{
+			get
+			{
+				return student.State;
+			}
+			set
+			{
+				student.State = value;
+				OnPropertyChanged("State");
+			}
+		}
+
+		public string Zip
+		{
+			get
+			{
+				return student.Zip;
+			}
+			set
+			{
+				student.Zip = value;
+				OnPropertyChanged("Zip");
 			}
 		}
 

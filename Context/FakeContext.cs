@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data.Objects;
 
 namespace AdmissionsInformationSystem.Context
@@ -60,6 +61,11 @@ namespace AdmissionsInformationSystem.Context
 			{
 				DisposeCalled(this, new EventArgs());
 			}
+		}
+
+		public ObservableCollection<T> Select()
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

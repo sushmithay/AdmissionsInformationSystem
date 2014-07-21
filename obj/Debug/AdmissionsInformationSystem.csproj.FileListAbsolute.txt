@@ -23,4 +23,5 @@ C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\
 C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\AdmissionsInformationSystem.csproj.GenerateResource.Cache
 C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\AdmissionsInformationSystem.exe
 C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\AdmissionsInformationSystem.pdb
-C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\AdmissionsInformationSystem.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\View\LoginWindow.g.cs
+C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\View\LoginWindow.baml

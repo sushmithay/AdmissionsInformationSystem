@@ -1,20 +1,21 @@
 ﻿using AdmissionsInformationSystem.Context;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace AdmissionsInformationSystem.Model
 {
 	public static class ModelGenerator
 	{
-		public static FakeContext<Student> BuildFakeStudents()
+		public static StudentContext BuildFakeStudents()
 		{
-			return new FakeContext<Student>(
+			return new StudentContext(
 				new List<Student> {
 					new Student { 
 						SocialSecurityNumber = "234-11-2334",
 						FirstName = "Phani",
 						MiddleName = "Bonda",
 						LastName = "Ndra",
-						Address = "Albmarle Rd. Charlotte NC, 28262",
+						StreetAddress = "Albmarle Rd. Charlotte NC, 28262",
 						InState = "Yes",
 						Email = "phani@uncc.edu",
 						PhoneNumber = "(342) 342-1243",
@@ -26,7 +27,7 @@ namespace AdmissionsInformationSystem.Model
 						FirstName = "Daniel",
 						MiddleName = "",
 						LastName = "Scroggins",
-						Address = "John Krik Dr. Atlanta GA, 28275",
+						StreetAddress = "John Krik Dr. Atlanta GA, 28275",
 						InState = "Yes",
 						Email = "daniel@uncc.edu",
 						PhoneNumber = "(342) 342-1423",
@@ -38,7 +39,7 @@ namespace AdmissionsInformationSystem.Model
 						FirstName = "Roxolana",
 						MiddleName = "",
 						LastName = "Buckle",
-						Address = "Wt Harris Blvd Charlotte NC, 28262",
+						StreetAddress = "Wt Harris Blvd Charlotte NC, 28262",
 						InState = "Yes",
 						Email = "roxo@uncc.edu",
 						PhoneNumber = "(123) 324-1234",
@@ -50,7 +51,7 @@ namespace AdmissionsInformationSystem.Model
 						FirstName = "Virginia",
 						MiddleName = "",
 						LastName = "Kern",
-						Address = "JW Clay Road NC, 28262",
+						StreetAddress = "JW Clay Road NC, 28262",
 						InState = "Yes",
 						Email = "kern@uncc.edu",
 						PhoneNumber = "(123) 123-1432",
@@ -62,7 +63,7 @@ namespace AdmissionsInformationSystem.Model
 						FirstName = "Swetha",
 						MiddleName = "Metireddy",
 						LastName = "Keerthi",
-						Address = "Milton Road Los Angles CA 38262",
+						StreetAddress = "Milton Road Los Angles CA 38262",
 						InState = "Yes",
 						Email = "swetha@uncc.edu",
 						PhoneNumber = "(123) 132-1231",
@@ -74,7 +75,7 @@ namespace AdmissionsInformationSystem.Model
 						FirstName = "Sushmita",
 						MiddleName = "",
 						LastName = "Yalla",
-						Address = "Sharone Emity Dr Cary NC 24262",
+						StreetAddress = "Sharone Emity Dr Cary NC 24262",
 						InState = "Yes",
 						Email = "sylla@uncc.edu",
 						PhoneNumber = "(321) 132-1234",
@@ -86,7 +87,7 @@ namespace AdmissionsInformationSystem.Model
 						FirstName = "Krishna",
 						MiddleName = "",
 						LastName = "Chaitanya",
-						Address = "Clories Road Clevland OH 38943",
+						StreetAddress = "Clories Road Clevland OH 38943",
 						InState = "Yes",
 						Email = "phani@uncc.edu",
 						PhoneNumber = "(123) 123-1423",
@@ -97,9 +98,9 @@ namespace AdmissionsInformationSystem.Model
 			);
 		}
 
-		public static FakeContext<Parameter> BuildFakeParameters()
+		public static ParameterContext BuildFakeParameters()
 		{
-			return new FakeContext<Parameter>(new List<Parameter> {
+			return new ParameterContext(new List<Parameter> {
 				new Parameter {
 					GPAThreshold = 3.0M,
 					GPAWeight = .3M,					   
@@ -110,9 +111,9 @@ namespace AdmissionsInformationSystem.Model
 			});
 		}
 
-		public static FakeContext<CollegeLife> BuildFakeCollegeLife()
+		public static ObservableCollection<CollegeLife> BuildFakeCollegeLife()
 		{
-			return new FakeContext<CollegeLife>(new List<CollegeLife> {
+			return new ObservableCollection<CollegeLife>(new List<CollegeLife> {
 				new CollegeLife {
 					Name = "Campus Events",
 					Description = @"The Campus Events website is your resource for hundreds of activities and events held at UNC Charlotte throughout the year. Search this online calendar by date or event categories such as speakers, arts, entertainment, recreation, career, and more. Promote your own campus department or student organization's activities by submitting your campus events online."
@@ -136,9 +137,9 @@ namespace AdmissionsInformationSystem.Model
 			});
 		}
 
-		public static FakeContext<DegreeProgram> BuildFakeDegreePrograms()
+		public static ObservableCollection<DegreeProgram> BuildFakeDegreePrograms()
 		{
-			return new FakeContext<DegreeProgram>(new List<DegreeProgram> {
+			return new ObservableCollection<DegreeProgram>(new List<DegreeProgram> {
 				new DegreeProgram {
 					Name = "Bioinformatics",
 					Description = "CS now offers a path through the Computer Science M.S. degree program by taking only evening classes (5 pm or later). At least twelve courses will be offered in the evening on a three-year rotation schedule such that it is possible to satisfy the program requirements and graduate within three years by taking a suitable selection of ten of these evening classes. This program should be of particular interest to working professionals."
