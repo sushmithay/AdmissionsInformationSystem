@@ -25,3 +25,4 @@ C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\
 C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\AdmissionsInformationSystem.pdb
 C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\View\LoginWindow.g.cs
 C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\View\LoginWindow.baml
+C:\Users\Daniel\Desktop\Projects\ITCS6160\AdmissionsInformationSystem\obj\Debug\AdmissionsInformationSystem.csprojResolveAssemblyReference.cache
