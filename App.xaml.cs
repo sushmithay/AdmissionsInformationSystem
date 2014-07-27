@@ -26,20 +26,18 @@ namespace AdmissionsInformationSystem
 			ObservableCollection<DegreeProgram> degreePrograms;
 			ObservableCollection<Term> terms;
 
-			if(ConfigurationManager.AppSettings["FakeData"] == "True")
-			{
-				Students = ModelGenerator.BuildFakeStudents();
-				Parameters = ModelGenerator.BuildFakeParameters();
-				collegeLife = ModelGenerator.BuildFakeCollegeLife();
-				degreePrograms = ModelGenerator.BuildFakeDegreePrograms();
-			}
-			else
+			try
 			{
 				//connect with mysql database
-				string connection = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+				Database.ConnectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
 
-				Students = null;
-				Parameters = null;
+				Students = new StudentContext(
+					from DataRow row in Database.Query("SELECT * FROM ais.tblstudent").Rows
+					select new Student(row));
+
+				Parameters = new ParameterContext(
+					from DataRow row in Database.Query("SELECT * FROM ais.tblparameter").Rows
+					select new Parameter(row));
 
 				collegeLife = new ObservableCollection<CollegeLife>(
 					from DataRow row in Database.Proc("getPersonalInterest").Rows
@@ -49,12 +47,20 @@ namespace AdmissionsInformationSystem
 					from DataRow row in Database.Proc("getDegreePrograms").Rows
 					select new DegreeProgram(row));
 
-				//terms = new ObservableCollection<Term>(
-				//	from DataRow row in Database.Proc("getTerms").Rows
-				//	select new Term(row));
+				terms = new ObservableCollection<Term>(
+					from DataRow row in Database.Proc("getTerm").Rows
+					select new Term(row));
+			}
+			catch
+			{
+				Students = ModelGenerator.BuildFakeStudents();
+				Parameters = ModelGenerator.BuildFakeParameters();
+				collegeLife = ModelGenerator.BuildFakeCollegeLife();
+				degreePrograms = ModelGenerator.BuildFakeDegreePrograms();
+				terms = null;
 			}
 
-			MainWindowViewModel model = new MainWindowViewModel(Students, Parameters, collegeLife, degreePrograms);
+			MainWindowViewModel model = new MainWindowViewModel(Students, Parameters, collegeLife, degreePrograms, terms);
 			MainWindow window = new MainWindow { DataContext = model };
 			window.Show();
 		}

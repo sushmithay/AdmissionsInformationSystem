@@ -52,8 +52,7 @@ namespace AdmissionsInformationSystem.ViewModel
 
 		public override void Save()
 		{
-			throw new NotImplementedException(); //add term
-			context.Update(currentStudent.Model(), "term");
+			context.Update(currentStudent.Model());
 		}
 
 		public ICommand Add { get; private set; }

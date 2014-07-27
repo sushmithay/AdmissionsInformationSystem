@@ -23,7 +23,7 @@
 		<TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="25,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Threshold" VerticalAlignment="Top" Width="120" Height="16" Grid.Column="2"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="L" VerticalAlignment="Top" Width="10" Height="16" Grid.Column="2"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,90,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Out of State" VerticalAlignment="Top" Width="85" Height="16" Grid.ColumnSpan="2"/>
-		<ComboBox Grid.Column="1" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="171"/>
+		<ComboBox ItemsSource="{Binding Path=Terms}" SelectedIndex="{Binding Path=SelectedTerm}" Grid.Column="1" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="171"/>
 		<TextBlock HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="Term" VerticalAlignment="Top" Width="85" Height="16" Grid.ColumnSpan="2"/>
 		<Separator HorizontalAlignment="Left" Height="16" Margin="10,18,0,0" Grid.Row="1" VerticalAlignment="Top" Width="532" Grid.ColumnSpan="3"/>
 		<Slider Name="SATThreshold" Value="{Binding Path=CurrentParameter.SATThreshold}" Minimum="0" Maximum="1600" Grid.Column="2" HorizontalAlignment="Left" Margin="10,62,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Height="18"/>

@@ -1,10 +1,10 @@
 ﻿using AdmissionsInformationSystem.Data;
 using AdmissionsInformationSystem.Model;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Objects;
-using System.Data.OleDb;
 
 namespace AdmissionsInformationSystem.Context
 {
@@ -57,7 +57,7 @@ namespace AdmissionsInformationSystem.Context
 		public Parameter Select(string term)
 		{
 			return new Parameter(Database.Proc("getParameter", new[] {
-				new OleDbParameter("term", term)
+				new MySqlParameter("term", term)
 			}).Rows[0]);
 		}
 
@@ -68,7 +68,7 @@ namespace AdmissionsInformationSystem.Context
 
 		public void Update(Parameter item)
 		{
-			Database.Proc("getParameter", item);
+			Database.Proc("setParameter", item);
 		}
 
 		public void Delete(Parameter item)

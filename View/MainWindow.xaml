@@ -50,7 +50,7 @@
 			</TabItem>
 		</TabControl>
 
-		<TextBlock Width="91" Height="20" Panel.ZIndex="100" VerticalAlignment="Top" Margin="0,57,90,0" HorizontalAlignment="Right" TextAlignment="Right" Text="Welcome, User!" />
+		<TextBlock Width="91" Height="20" Panel.ZIndex="100" VerticalAlignment="Top" Margin="0,57,90,0" HorizontalAlignment="Right" TextAlignment="Right" Text="{Binding Path=Welcome}" />
 		<Button Width="70" Height="20" Panel.ZIndex="100" VerticalAlignment="Top" Margin="0,55,15,0" HorizontalAlignment="Right" Click="Button_Click">Login</Button>
 	</Grid>
 </Window>

@@ -13,6 +13,11 @@ namespace AdmissionsInformationSystem.ViewModel
 			return parameter;
 		}
 
+		public void SetTerm(string term)
+		{
+			parameter.Term = term;
+		}
+
 		public ParameterViewModel(Parameter parameter, ParameterContext context)
 		{
 			if(parameter == null)
@@ -38,7 +43,7 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return decimal.Round(parameter.GPAThreshold, 3);
+				return decimal.Round(parameter.GPAThreshold, 2);
 			}
 			set
 			{
@@ -64,7 +69,7 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return decimal.Round(parameter.GPAWeight, 3);
+				return decimal.Round(parameter.GPAWeight, 2);
 			}
 			set
 			{
@@ -77,7 +82,7 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return decimal.Round(parameter.SATWeight, 3);
+				return decimal.Round(parameter.SATWeight, 2);
 			}
 			set
 			{
@@ -91,7 +96,7 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			get
 			{
-				return decimal.Round(parameter.OutOfStateWeight, 3);
+				return decimal.Round(parameter.OutOfStateWeight, 2);
 			}
 			set
 			{

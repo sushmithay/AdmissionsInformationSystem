@@ -1,11 +1,11 @@
 ﻿using AdmissionsInformationSystem.Data;
 using AdmissionsInformationSystem.Model;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.Objects;
-using System.Data.OleDb;
 using System.Linq;
 
 namespace AdmissionsInformationSystem.Context
@@ -13,6 +13,9 @@ namespace AdmissionsInformationSystem.Context
 	public class StudentContext : IContext<Student>
 	{
 		public IObjectSet<Student> Items { get; private set; }
+		public Term Term { get; set; }
+		public CollegeLife Interest { get; set; }
+		public DegreeProgram Program { get; set; }
 
 		public StudentContext()
 		{
@@ -65,14 +68,23 @@ namespace AdmissionsInformationSystem.Context
 
 		public void Update(Student item)
 		{
-			throw new NotImplementedException();
-		}
-
-		public void Update(Student item, string term)
-		{
-			Database.Proc("setApply", (item as IEnumerable<OleDbParameter>).Concat(new[] {
-				new OleDbParameter("term", term)
-			}).ToArray());
+			Database.Proc("setApply", (new[] {
+				new MySqlParameter("IN_SSN", item.SocialSecurityNumber),
+				new MySqlParameter("IN_fName", item.FirstName),
+				new MySqlParameter("IN_mInitial", item.MiddleInitial ?? "a"),
+				new MySqlParameter("IN_lName", item.LastName),
+				new MySqlParameter("IN_strAddr", item.StreetAddress ?? "a"),
+				new MySqlParameter("IN_City", item.City ?? "a"),
+				new MySqlParameter("IN_State", item.State ?? "a"),
+				new MySqlParameter("IN_zip", item.Zip ?? "a"),
+				new MySqlParameter("IN_email", item.Email),
+				new MySqlParameter("IN_phoneNum", item.PhoneNumber ?? "a"),
+				new MySqlParameter("IN_SAT", item.SAT),
+				new MySqlParameter("IN_GPA", item.GPA),
+				new MySqlParameter("IN_collegeLifeName", Interest.Name),
+				new MySqlParameter("IN_termName", Term.Name),
+				new MySqlParameter("IN_degreeName", Program.Name)
+			}));
 		}
 
 		public void Delete(Student item)

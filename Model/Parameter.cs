@@ -1,6 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
-using System.Data.OleDb;
+
 namespace AdmissionsInformationSystem.Model
 {
 	public class Parameter
@@ -19,22 +20,22 @@ namespace AdmissionsInformationSystem.Model
 
 		public Parameter(DataRow row)
 		{
-			GPAWeight = Convert.ToDecimal(row["GPAWeight"]);
-			SATWeight = Convert.ToDecimal(row["SATWeight"]);
+			GPAWeight = Convert.ToDecimal(row["GPAWeight"]) / 100;
+			SATWeight = Convert.ToDecimal(row["SATWeight"]) / 100;
 			GPAThreshold = Convert.ToDecimal(row["GPAThreshold"]);
 			SATThreshold = Convert.ToInt32(row["SATThreshold"]);
-			OutOfStateWeight = Convert.ToDecimal(row["outOfStateWeight"]);
+			OutOfStateWeight = Convert.ToDecimal(row["outOfStateWeight"]) / 100;
 		}
 
-		public static implicit operator OleDbParameter[](Parameter parameter)
+		public static implicit operator MySqlParameter[](Parameter parameter)
 		{
 			return new[] { 
-				new OleDbParameter("GPAWeight", parameter.GPAWeight),
-				new OleDbParameter("SATWeight", parameter.SATWeight),
-				new OleDbParameter("GPAThreshold", parameter.GPAThreshold),
-				new OleDbParameter("SATThreshold", parameter.SATThreshold),
-				new OleDbParameter("outOfStateWeight", parameter.OutOfStateWeight),
-				new OleDbParameter("term", parameter.Term),
+				new MySqlParameter("gpaweight", parameter.GPAWeight * 100),
+				new MySqlParameter("satweight", parameter.SATWeight * 100),
+				new MySqlParameter("gpathreshold", parameter.GPAThreshold),
+				new MySqlParameter("satthreshold", parameter.SATThreshold),
+				new MySqlParameter("outofstateweight", parameter.OutOfStateWeight * 100),
+				new MySqlParameter("termapplied", parameter.Term),
 			};
 		}
 	}

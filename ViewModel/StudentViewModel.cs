@@ -6,7 +6,7 @@ namespace AdmissionsInformationSystem.ViewModel
 {
 	public class StudentViewModel : ViewModelBase
 	{
-		private StudentContext context;
+		private StudentContext Context;
 		private Student student;
 		public Student Model()
 		{
@@ -16,6 +16,18 @@ namespace AdmissionsInformationSystem.ViewModel
 		public void UpdateModel(Student model)
 		{
 			student = model;
+			OnPropertyChanged("SocialSecurityNumber");
+			OnPropertyChanged("FirstName");
+			OnPropertyChanged("MiddleInitial");
+			OnPropertyChanged("LastName");
+			OnPropertyChanged("StreetAddress");
+			OnPropertyChanged("City");
+			OnPropertyChanged("State");
+			OnPropertyChanged("Zip");
+			OnPropertyChanged("Email");
+			OnPropertyChanged("PhoneNumber");
+			OnPropertyChanged("GPA");
+			OnPropertyChanged("SAT");
 		}
 
 		public StudentViewModel(Student student, StudentContext context)
@@ -30,13 +42,13 @@ namespace AdmissionsInformationSystem.ViewModel
 				throw new ArgumentNullException("context");
 			}
 
-			this.context = context;
+			this.Context = context;
 			this.student = student;
 		}
 
 		public override void Save()
 		{
-			context.Update(student);
+			Context.Update(student);
 		}
 
 		public string SocialSecurityNumber
@@ -65,16 +77,16 @@ namespace AdmissionsInformationSystem.ViewModel
 			}
 		}
 
-		public string MiddleName
+		public string MiddleInitial
 		{
 			get
 			{
-				return student.MiddleName;
+				return student.MiddleInitial;
 			}
 			set
 			{
-				student.MiddleName = value;
-				OnPropertyChanged("MiddleName");
+				student.MiddleInitial = value;
+				OnPropertyChanged("MiddleInitial");
 			}
 		}
 
@@ -193,6 +205,13 @@ namespace AdmissionsInformationSystem.ViewModel
 				student.SAT = value;
 				OnPropertyChanged("SAT");
 			}
+		}
+
+		public void Set(Term Term, CollegeLife Interest, DegreeProgram Program)
+		{
+			Context.Term = Term;
+			Context.Interest = Interest;
+			Context.Program = Program;
 		}
 	}
 }

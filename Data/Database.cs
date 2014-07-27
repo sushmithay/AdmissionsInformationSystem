@@ -1,6 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Data;
-using System.Data.OleDb;
 
 namespace AdmissionsInformationSystem.Data
 {
@@ -8,23 +8,11 @@ namespace AdmissionsInformationSystem.Data
 	{
 		public static string ConnectionString { get; set; }
 
-		public static DataTable Query(string prodedure, params OleDbParameter[] parameters)
+		public static DataTable Proc(string prodedure, params MySqlParameter[] parameters)
 		{
-			return Execute<DataTable>(command => {
-				using(OleDbDataAdapter adapter = new OleDbDataAdapter(command))
-				{
-					DataTable table = new DataTable();
-					adapter.Fill(table);
-					return table;
-				}
-			}, parameters);
-		}
-
-		public static DataTable Proc(string prodedure, params OleDbParameter[] parameters)
-		{
-			return Execute<DataTable>(command => {
+			return Execute<DataTable>(prodedure, command => {
 				command.CommandType = CommandType.StoredProcedure;
-				using(OleDbDataAdapter adapter = new OleDbDataAdapter(command))
+				using(MySqlDataAdapter adapter = new MySqlDataAdapter(command))
 				{
 					DataTable table = new DataTable();
 					adapter.Fill(table);
@@ -33,30 +21,41 @@ namespace AdmissionsInformationSystem.Data
 			}, parameters);
 		}
 
-		public static int NonQuery(string sql, params OleDbParameter[] parameters)
+		public static DataTable Query(string sql, params MySqlParameter[] parameters)
 		{
-			return Execute<int>(command => { return command.ExecuteNonQuery(); }, parameters);
+			return Execute<DataTable>(sql, command => {
+				using(MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+				{
+					DataTable table = new DataTable();
+					adapter.Fill(table);
+					return table;
+				}
+			}, parameters);
 		}
 
-		public static object Scalar(string sql, params OleDbParameter[] parameters)
+		public static int NonQuery(string sql, params MySqlParameter[] parameters)
 		{
-			return Execute<object>(command => { return command.ExecuteScalar(); }, parameters);
+			return Execute<int>(sql, command => { return command.ExecuteNonQuery(); }, parameters);
 		}
 
-		private static T Execute<T>(Func<OleDbCommand, T> query, params OleDbParameter[] parameters)
+		public static object Scalar(string sql, params MySqlParameter[] parameters)
 		{
-			using(OleDbConnection connection = new OleDbConnection(ConnectionString))
+			return Execute<object>(sql, command => { return command.ExecuteScalar(); }, parameters);
+		}
+
+		private static T Execute<T>(string sql, Func<MySqlCommand, T> query, params MySqlParameter[] parameters)
+		{
+			using(MySqlConnection connection = new MySqlConnection(ConnectionString))
 			{
 				connection.Open();
-				using(OleDbCommand command = new OleDbCommand())
+				using(MySqlCommand command = new MySqlCommand(sql, connection))
 				{
 					if(parameters != null && parameters.Length > 0)
 					{
 						command.Parameters.AddRange(parameters);
 					}
 
-					command.Connection = connection;
-					using(OleDbTransaction transaction = connection.BeginTransaction(IsolationLevel.ReadCommitted))
+					using(MySqlTransaction transaction = connection.BeginTransaction(IsolationLevel.ReadCommitted))
 					{
 						command.Transaction = transaction;
 						try

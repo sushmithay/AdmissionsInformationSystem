@@ -14,16 +14,32 @@ namespace AdmissionsInformationSystem.ViewModel
 		public StudentWorkspaceViewModel StudentWorkspace { get; private set; }
 		public AdminWorkspaceViewModel AdminWorkspace { get; private set; }
 
+		private string welcome;
+		public string Welcome
+		{
+			get
+			{
+				return welcome;
+			}
+			set
+			{
+				welcome = value;
+				OnPropertyChanged("Welcome");
+			}
+		}
+
 		private StudentContext Students;
 		private ParameterContext Parameters;
 		private ObservableCollection<CollegeLife> CollegeLife;
 		private ObservableCollection<DegreeProgram> DegreePrograms;
+		private ObservableCollection<Term> Terms;
 
 		public MainWindowViewModel(
 			StudentContext studentContext,
 			ParameterContext adminContext,
 			ObservableCollection<CollegeLife> collegeLife,
-			ObservableCollection<DegreeProgram> degreePrograms)
+			ObservableCollection<DegreeProgram> degreePrograms,
+			ObservableCollection<Term> terms)
 		{
 			if(studentContext == null)
 			{
@@ -45,10 +61,16 @@ namespace AdmissionsInformationSystem.ViewModel
 				throw new ArgumentNullException("degreePrograms");
 			}
 
+			if(terms == null)
+			{
+				throw new ArgumentNullException("terms");
+			}
+
 			Students = studentContext;
 			Parameters = adminContext;
 			CollegeLife = collegeLife;
 			DegreePrograms = degreePrograms;
+			Terms = terms;
 
 			ObservableCollection<StudentViewModel> students = new ObservableCollection<StudentViewModel>();
 			foreach(Student student in studentContext.Items)
@@ -62,9 +84,9 @@ namespace AdmissionsInformationSystem.ViewModel
 				parameters.Add(new ParameterViewModel(parameter, adminContext));
 			}
 
-			InquiryWorkspace = new InquiryWorkspaceViewModel(studentContext, collegeLife, degreePrograms);
+			InquiryWorkspace = new InquiryWorkspaceViewModel(studentContext, collegeLife, degreePrograms, terms);
 			StudentWorkspace = new StudentWorkspaceViewModel(students, studentContext);
-			AdminWorkspace = new AdminWorkspaceViewModel(parameters, adminContext);
+			AdminWorkspace = new AdminWorkspaceViewModel(parameters, adminContext, terms);
 
 			SaveCommand = new DelegateCommand(o => Save());
 		}

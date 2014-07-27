@@ -13,7 +13,7 @@ namespace AdmissionsInformationSystem.Model
 					new Student { 
 						SocialSecurityNumber = "234-11-2334",
 						FirstName = "Phani",
-						MiddleName = "Bonda",
+						MiddleInitial = "Bonda",
 						LastName = "Ndra",
 						StreetAddress = "Albmarle Rd. Charlotte NC, 28262",
 						InState = "Yes",
@@ -25,7 +25,7 @@ namespace AdmissionsInformationSystem.Model
 					new Student { 
 						SocialSecurityNumber = "342-41-2332",
 						FirstName = "Daniel",
-						MiddleName = "",
+						MiddleInitial = "",
 						LastName = "Scroggins",
 						StreetAddress = "John Krik Dr. Atlanta GA, 28275",
 						InState = "Yes",
@@ -37,7 +37,7 @@ namespace AdmissionsInformationSystem.Model
 					new Student { 
 						SocialSecurityNumber = "324-23-412",
 						FirstName = "Roxolana",
-						MiddleName = "",
+						MiddleInitial = "",
 						LastName = "Buckle",
 						StreetAddress = "Wt Harris Blvd Charlotte NC, 28262",
 						InState = "Yes",
@@ -49,7 +49,7 @@ namespace AdmissionsInformationSystem.Model
 					new Student { 
 						SocialSecurityNumber = "122-34-322",
 						FirstName = "Virginia",
-						MiddleName = "",
+						MiddleInitial = "",
 						LastName = "Kern",
 						StreetAddress = "JW Clay Road NC, 28262",
 						InState = "Yes",
@@ -61,7 +61,7 @@ namespace AdmissionsInformationSystem.Model
 					new Student { 
 						SocialSecurityNumber = "124-34-232",
 						FirstName = "Swetha",
-						MiddleName = "Metireddy",
+						MiddleInitial = "Metireddy",
 						LastName = "Keerthi",
 						StreetAddress = "Milton Road Los Angles CA 38262",
 						InState = "Yes",
@@ -73,7 +73,7 @@ namespace AdmissionsInformationSystem.Model
 					new Student { 
 						SocialSecurityNumber = "432-12-3412",
 						FirstName = "Sushmita",
-						MiddleName = "",
+						MiddleInitial = "",
 						LastName = "Yalla",
 						StreetAddress = "Sharone Emity Dr Cary NC 24262",
 						InState = "Yes",
@@ -85,7 +85,7 @@ namespace AdmissionsInformationSystem.Model
 					new Student { 
 						SocialSecurityNumber = "324-14-2312",
 						FirstName = "Krishna",
-						MiddleName = "",
+						MiddleInitial = "",
 						LastName = "Chaitanya",
 						StreetAddress = "Clories Road Clevland OH 38943",
 						InState = "Yes",

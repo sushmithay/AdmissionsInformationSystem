@@ -15,5 +15,10 @@ namespace AdmissionsInformationSystem.Model
 		{
 			Name = row["termName"].ToString();
 		}
+
+		public override string ToString()
+		{
+			return Name;
+		}
 	}
 }

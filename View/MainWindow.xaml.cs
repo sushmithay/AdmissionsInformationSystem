@@ -1,9 +1,9 @@
 ﻿using AdmissionsInformationSystem.Data;
 using AdmissionsInformationSystem.Model;
 using AdmissionsInformationSystem.ViewModel;
+using MySql.Data.MySqlClient;
 using System;
 using System.Data;
-using System.Data.OleDb;
 using System.Windows;
 
 namespace AdmissionsInformationSystem
@@ -16,6 +16,12 @@ namespace AdmissionsInformationSystem
 		public MainWindow()
 		{
 			InitializeComponent();
+
+			Inquire.IsSelected = true;
+			Inquire.Visibility = Visibility.Visible;
+			Students.Visibility = Visibility.Collapsed;
+			Approvals.Visibility = Visibility.Collapsed;
+			Admin.Visibility = Visibility.Collapsed;
 		}
 
 		private void Button_Click(object sender, RoutedEventArgs e)
@@ -29,31 +35,56 @@ namespace AdmissionsInformationSystem
 		private void Login(object sender, EventArgs e)
 		{
 			LoginViewModel model = ((sender as LoginWindow).DataContext as LoginViewModel);
-			DataTable result = Database.Proc("getLogin", new[] { 
-				new OleDbParameter("userID", model.Username)
-			});
 
-			if(result != null && result.Rows.Count > 0)
+			try
 			{
-				DataRow user = result.Rows[0];
-				if(user["isAdminFlag"].ToString() == "Yes")
+				DataTable result = Database.Proc("getLogin", new[] { 
+					new MySqlParameter("IN_userID", Convert.ToInt32(model.Username)),
+					new MySqlParameter("IN_passwd", model.Password)
+				});
+
+				if(result != null && result.Rows.Count > 0)
 				{
-					Students.IsSelected = true;
-					Inquire.Visibility = Visibility.Collapsed;
-					Students.Visibility = Visibility.Visible;
-					Approvals.Visibility = Visibility.Visible;
-					Admin.Visibility = Visibility.Visible;
+					MainWindowViewModel window = (DataContext as MainWindowViewModel);
+					DataRow user = result.Rows[0];
+					if(result.Columns.Contains("admissionClerkID"))
+					{
+						Students.IsSelected = true;
+						Inquire.Visibility = Visibility.Collapsed;
+						Students.Visibility = Visibility.Visible;
+						Approvals.Visibility = Visibility.Visible;
+
+						if(Convert.ToInt32(user["admissionClerkID"]) == 1)
+						{
+							Admin.Visibility = Visibility.Visible;
+						}
+						else
+						{
+							Admin.Visibility = Visibility.Collapsed;
+						}
+
+						window.Welcome = "Welcome, " + user["fName"] + "!";
+					}
+					else
+					{
+						Inquire.IsSelected = true;
+						Inquire.Visibility = Visibility.Visible;
+						Students.Visibility = Visibility.Collapsed;
+						Approvals.Visibility = Visibility.Collapsed;
+						Admin.Visibility = Visibility.Collapsed;
+
+						window.InquiryWorkspace.Student.UpdateModel(new Student(user));
+						window.Welcome = "Welcome, " + user["fName"] + "!";
+					}
 				}
 				else
 				{
-					Inquire.IsSelected = true;
-					Inquire.Visibility = Visibility.Visible;
-					Students.Visibility = Visibility.Collapsed;
-					Approvals.Visibility = Visibility.Collapsed;
-					Admin.Visibility = Visibility.Collapsed;
-
-					(DataContext as MainWindowViewModel).InquiryWorkspace.Student.UpdateModel(new Student(user));
+					MessageBox.Show("Invalid username or password");
 				}
+			}
+			catch
+			{
+				MessageBox.Show("Invalid username or password");
 			}
 		}
 	}

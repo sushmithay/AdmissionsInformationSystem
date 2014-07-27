@@ -1,7 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.OleDb;
 
 namespace AdmissionsInformationSystem.Model
 {
@@ -11,7 +11,7 @@ namespace AdmissionsInformationSystem.Model
 		public int Desirability { get; set; }
 		public string SocialSecurityNumber { get; set; }
 		public string FirstName { get; set; }
-		public string MiddleName { get; set; }
+		public string MiddleInitial { get; set; }
 		public string LastName { get; set; }
 		public string StreetAddress { get; set; }
 		public string City { get; set; }
@@ -31,13 +31,11 @@ namespace AdmissionsInformationSystem.Model
 
 		public Student(DataRow row)
 		{
-			//Id = Convert.ToDecimal(row[""]);
-			//Desirability = Convert.ToDecimal(row[""]);
 			SocialSecurityNumber = row["SSN"].ToString();
 			FirstName = row["fName"].ToString();
-			MiddleName = row["mInitial"].ToString();
+			MiddleInitial = row["mInitial"].ToString();
 			LastName = row["lName"].ToString();
-			StreetAddress = row["streetAddress"].ToString();
+			StreetAddress = row["strAddress"].ToString();
 			City = row["city"].ToString();
 			State = row["state"].ToString();
 			Zip = row["zip"].ToString();
@@ -48,21 +46,21 @@ namespace AdmissionsInformationSystem.Model
 			SAT = Convert.ToInt32(row["SAT"]);
 		}
 
-		public static implicit operator OleDbParameter[](Student student)
+		public static implicit operator MySqlParameter[](Student student)
 		{
 			return new[] { 
-				new OleDbParameter("SSN", student.SocialSecurityNumber),
-				new OleDbParameter("fName", student.FirstName),
-				new OleDbParameter("mInitial", student.MiddleName),
-				new OleDbParameter("lName", student.LastName),
-				new OleDbParameter("city", student.City),
-				new OleDbParameter("state", student.State),
-				new OleDbParameter("zip", student.Zip),
-				new OleDbParameter("inStateFlag", student.InState),
-				new OleDbParameter("email", student.Email),
-				new OleDbParameter("phone", student.PhoneNumber),
-				new OleDbParameter("SAT", student.SAT),
-				new OleDbParameter("GPA", student.GPA)				
+				new MySqlParameter("SSN", student.SocialSecurityNumber),
+				new MySqlParameter("fName", student.FirstName),
+				new MySqlParameter("mInitial", student.MiddleInitial),
+				new MySqlParameter("lName", student.LastName),
+				new MySqlParameter("city", student.City),
+				new MySqlParameter("state", student.State),
+				new MySqlParameter("zip", student.Zip),
+				new MySqlParameter("inStateFlag", student.InState),
+				new MySqlParameter("email", student.Email),
+				new MySqlParameter("phone", student.PhoneNumber),
+				new MySqlParameter("SAT", student.SAT),
+				new MySqlParameter("GPA", student.GPA)				
 			};
 		}
 	}
