@@ -16,6 +16,9 @@
 		<DataTemplate DataType="{x:Type vm:AdminWorkspaceViewModel}">
 			<v:AdminWorkspaceView/>
 		</DataTemplate>
+		<DataTemplate DataType="{x:Type vm:StudentApprovalsViewModel}">
+			<v:StudentApprovalsView/>
+		</DataTemplate>
 	</Window.Resources>
 
 	<Grid Margin="0,0,4,0">
@@ -42,7 +45,7 @@
 			</TabItem>
 			<TabItem Name="Approvals" Width="100">
 				<TabItem.Header>Approvals</TabItem.Header>
-				<ContentControl Margin="10" Content="" />
+				<ContentControl Margin="10" Content="{Binding Path=.ApprovalsWorkspace}" />
 			</TabItem>
 			<TabItem Name="Admin" Width="100">
 				<TabItem.Header>Admin</TabItem.Header>

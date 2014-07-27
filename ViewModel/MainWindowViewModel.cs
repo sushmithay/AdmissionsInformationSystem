@@ -3,6 +3,7 @@ using AdmissionsInformationSystem.Model;
 using AdmissionsInformationSystem.Patterns;
 using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 
@@ -13,6 +14,7 @@ namespace AdmissionsInformationSystem.ViewModel
 		public InquiryWorkspaceViewModel InquiryWorkspace { get; private set; }
 		public StudentWorkspaceViewModel StudentWorkspace { get; private set; }
 		public AdminWorkspaceViewModel AdminWorkspace { get; private set; }
+		public StudentApprovalsViewModel ApprovalsWorkspace { get; private set; }
 
 		private string welcome;
 		public string Welcome
@@ -87,6 +89,7 @@ namespace AdmissionsInformationSystem.ViewModel
 			InquiryWorkspace = new InquiryWorkspaceViewModel(studentContext, collegeLife, degreePrograms, terms);
 			StudentWorkspace = new StudentWorkspaceViewModel(students, studentContext);
 			AdminWorkspace = new AdminWorkspaceViewModel(parameters, adminContext, terms);
+			ApprovalsWorkspace = new StudentApprovalsViewModel(degreePrograms, students.ToList<StudentViewModel>(), terms);
 
 			SaveCommand = new DelegateCommand(o => Save());
 		}

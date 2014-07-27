@@ -118,7 +118,9 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			if(Validate())
 			{
-				DataTable result = Database.Proc("setApply", (new[] {
+				try
+				{
+					DataTable result = Database.Proc("setApply", (new[] {
 					new MySqlParameter("IN_SSN", Student.SocialSecurityNumber),
 					new MySqlParameter("IN_fName", Student.FirstName),
 					new MySqlParameter("IN_mInitial", Student.MiddleInitial ?? ""),
@@ -135,7 +137,18 @@ namespace AdmissionsInformationSystem.ViewModel
 					new MySqlParameter("IN_termName", Terms[SelectedTerm]),
 					new MySqlParameter("IN_degreeName", DegreePrograms[SelectedProgram])
 				}));
-				MessageBox.Show("Thank you for applying. Your application has been sent to the student records administration office for processing.");
+
+					if(result != null && result.Rows.Count > 0)
+					{
+						DataRow user = result.Rows[0];
+						MessageBox.Show("Thank you for applying. Your application has been sent to the student records administration office for processing." +
+							"\nUsername: " + user["UserName"].ToString() + "\nPassword: " + user["UserPassword"].ToString());
+					}
+				}
+				catch(Exception ex)
+				{
+					MessageBox.Show("Error: " + ex.Message);
+				}
 			}
 		}
 

@@ -2,14 +2,16 @@
 * ITCS6160 Team B Summer 2 2014 
 * Project Description: 
 * 
-* Team Members: 
+* Team Members: Daniel Scrogging, Arvind Bhat, Virginia Kern, Roxolana Buckle, Swetha Keerthi Metireddy, 
+*				Pratibha Singh,	Phanindra Bonda, Sushmitha Yalla, Abhijeet Shedge, Shiva Tej Madapathi, 
+* 				Chaitanya Kancharla, Manikantha Manchala 
 * 
 * 
 * Sections: 
 *			1. Create Schema and Tables 
 * 			2. Populate the tables  
 * 			3. Create the views
-* 			4. Create the stored procedures accessible
+* 			4. Create the stored procedures 
 *
 *************************************************************************************************************************/
 
@@ -32,7 +34,8 @@ CREATE SCHEMA IF NOT EXISTS `AIS` DEFAULT CHARACTER SET utf8 COLLATE utf8_genera
 USE `AIS` ;
 
 -- -----------------------------------------------------
--- Table `AIS`.`tblRole`
+-- Table `AIS`.`tblRole` 
+-- Role differenciates between a student and an admin
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblRole` (
     `roleID` TINYINT NOT NULL AUTO_INCREMENT,
@@ -43,7 +46,8 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblRole` (
 
 
 -- -----------------------------------------------------
--- Table `AIS`.`tblUser`
+-- Table `AIS`.`tblUser` 
+-- It holds userID and passwords of both users and admins
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblUser` (
     `userID` INT NOT NULL AUTO_INCREMENT,
@@ -58,7 +62,8 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblUser` (
 
 
 -- -----------------------------------------------------
--- Table `AIS`.`tblStudent`
+-- Table `AIS`.`tblStudent` 
+-- This holds all the personal information about the student 
 -- -----------------------------------------------------
 
 CREATE TABLE IF NOT EXISTS `AIS`.`tblStudent` (
@@ -86,6 +91,7 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblStudent` (
 
 -- -----------------------------------------------------
 -- Table `AIS`.`tblTerm`
+-- This houses all the terms available for the students to apply 
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblTerm` (
     `termName` VARCHAR(15) NOT NULL,
@@ -94,7 +100,8 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblTerm` (
 
 
 -- -----------------------------------------------------
--- Table `AIS`.`tblParameter`
+-- Table `AIS`.`tblParameter` 
+-- Parameters are used to increase or decrease the thresholds. This table is used to manage parameters used in the admissions desirability metric.
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblParameter` (
     `parameterID` INT NOT NULL AUTO_INCREMENT,
@@ -114,6 +121,7 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblParameter` (
 
 -- -----------------------------------------------------
 -- Table `AIS`.`tblDegreeProgram`
+-- This lists all the degree programs available
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblDegreeProgram` (
     `degreeName` VARCHAR(100) NOT NULL,
@@ -123,7 +131,8 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblDegreeProgram` (
 
 
 -- -----------------------------------------------------
--- Table `AIS`.`tblCollegeLife`
+-- Table `AIS`.`tblCollegeLife` 
+-- Lists all the college life offerings available for students
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblCollegeLife` (
     `CollegeLifeName` VARCHAR(45) NOT NULL,
@@ -134,6 +143,7 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblCollegeLife` (
 
 -- -----------------------------------------------------
 -- Table `AIS`.`tblAdmissionClerk`
+-- Basic information for the admissions staff
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblAdmissionClerk` (
     `admissionClerkID` INT NOT NULL AUTO_INCREMENT,
@@ -151,6 +161,7 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblAdmissionClerk` (
 
 -- -----------------------------------------------------
 -- Table `AIS`.`tblInquireApply`
+-- Houses the interaction between the student and the sytem
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblInquireApply` (
     `applicationStatus` VARCHAR(6) NULL,
@@ -171,7 +182,8 @@ CREATE TABLE IF NOT EXISTS `AIS`.`tblInquireApply` (
 
 
 -- -----------------------------------------------------
--- Table `AIS`.`tblSeatsAvailable`
+-- Table `AIS`.`tblSeatsAvailable` 
+-- Shows seats available based on degree and term 
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AIS`.`tblSeatsAvailable` (
     `seatsAvailable` INT NULL,
@@ -487,6 +499,10 @@ insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Diver
 insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Student Computing","Student Computing provides technical support to students through the IT Service Desk. Get help with your NinerNET account, 49er Express, Moodle and other applications. Visit the Student Computing website to find out more about labs, software downloads, wireless access and tips on safe computing.");
 insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Student Affairs","As a vibrant educational institution that emphasizes the development of the individual and the betterment of the community, UNC Charlotte offers students many services and opportunities for personal and professional development. The Division of Student Affairs oversees a number of these services, which are available to help students achieve their educational and personal goals");
 insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Police & Public Safety","UNC Charlotte police officers are on duty 24 hours a day, seven days a week. Officers are assigned to protect the campus in cars, on bicycles, and on foot. The Police and Public Safety team periodically offers self-defense and other safety courses to faculty, staff and students.");
+insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Scholarships", "There are several categories of scholarships available to UNCC students.  Please visit the school’s Scholarship Website for detailed information.  The Levine Scholarship Program provides full tuition, room and board, a grant to implement a service project and four summers of experience.  Scholarships for Merit are awarded to incoming freshmen.  Applicants must receive a nomination from their high school counselor.  Athletic Scholarships are awarded by the coaches of the particular athletic program.  Department Scholarships are awarded by academic departments.  Private Scholarships are also awarded by civic, social and religious organizations.  Students must seek out and apply for private scholarships on their own.");
+insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Financial Aid", "There are 4 steps to Applying for Financial Aid:  Step 1: Apply for financial aid:  Submit the FAFSA (Free Application for Federal Student Aid). Be sure to enter our school code: 002975.  The priority filing date is March 1st.  All students must reapply every year for financial aid.  Step 2: Review and accept your financial aid award:  View your award in 49er Express.Make sure you don't have any outstanding requirements.  Step 3: Receive your financial aid:  Some refunds will go out the first week of class.  Grants and scholarships may not disburse until after the drop/add period ends.  Step 4:  Maintain financial aid eligibility: A FAFSA needs to be completed annually.  Maintain Satisfactory Academic Progress (SAP).");
+
+
 
 
 insert into `AIS`.`tblAdmissionClerk`(fName,mInitial,lName,tblUser_userID) values("Lei","T","Shang",1);
@@ -903,6 +919,14 @@ CREATE OR REPLACE VIEW `vParameter` AS
 *************************************************************************************************************************/
 
 
+/***************************************************************************
+* Name:		getDegreePrograms
+* Purpose: 	This procedure gets the degree names available 
+* Inputs:	None
+* Usage: 	call ais.getDegreePrograms; 
+
+***************************************************************************/
+
 DROP PROCEDURE IF EXISTS AIS.getDegreePrograms;
 
 
@@ -924,7 +948,13 @@ DELIMITER ;
 
 -- ----------------------
 
+/***************************************************************************
+* Name:		getParameter
+* Purpose: 	This procedure gets the parameter list  
+* Inputs:	termapplied
+* Usage: 	call ais.getParameter('Fall 2015'); 
 
+***************************************************************************/
 DROP PROCEDURE IF EXISTS getParameter;
 
 
@@ -949,6 +979,15 @@ DELIMITER ;
 
 -- -----------------------
 
+/***************************************************************************
+* Name:		getPersonalInterest
+* Purpose: 	To get the list of items that can be of interest to a student
+* Inputs:	None
+* Usage: 	call ais.getPersonalInterest(); 
+
+***************************************************************************/
+
+DROP PROCEDURE IF EXISTS ais.getPersonalInterest;
 
 DELIMITER ||
 
@@ -967,12 +1006,16 @@ END||
 
 DELIMITER ;
 
--- -----------------------------
 
-DELIMITER ||
+/***************************************************************************
+* Name:		getStudentInfo
+* Purpose: 	To get the details of a student displayed in the report for Admissions 
+* 			Although the front end for this is in future work, the database supports the search functionality
+* Inputs:	None - optional
+* Usage: 	call ais.getStudentInfo(null,null,null,null,null,null,null); 
 
+***************************************************************************/
 
-/* create getStudentInfo*/
 
 
 DROP PROCEDURE IF EXISTS AIS.getStudentInfo;
@@ -1024,6 +1067,15 @@ DELIMITER ;
 
 -- -----------------------------------------
 
+/***************************************************************************
+* Name:		getTerm
+* Purpose: 	To get the details of Terms available 
+* Inputs:	None
+* Usage: 	call ais.getTerm(); 
+
+***************************************************************************/
+
+
 DELIMITER ||
 
 /* create getTerm to fetch all the available term names */
@@ -1043,63 +1095,20 @@ END
 
 DELIMITER ; 
 
--- ---------------------------------------
-
-DELIMITER $$
-
-/* create procedure setInquire */
-CREATE PROCEDURE AIS.setInquire1 (
- IN userid INT,
- IN termapplied VARCHAR(15), 
- IN degree VARCHAR(100), 
- IN interest VARCHAR(45))
-
-BEGIN
-
-/* Existing user logs in from login tab */
- if userid in (select userID from tblUser) then
-
-SELECT 
-    SSN,
-    fName,
-    mInitial,
-    lName,
-    strAddress,
-    city,
-    state,
-    zip,
-    email,
-    phone,
-    SAT,
-    GPA
-FROM
-    ais.tblStudent
-WHERE
-    tblUser_userID = userid;
-
-SELECT 
-    degreeName, InfoMessage
-FROM
-    ais.tblDegreeProgram
-WHERE
-    degreeName = degree 
-UNION SELECT 
-    CollegeLifeName, collegeLifeInfoMessage
-FROM
-    ais.tblCollegeLife
-WHERE
-    CollegeLifeName = interest;
-
-   INSERT INTO ais.tblInquireApply (inquireFlag, tblStudent_SSN, termApplied, tblDegreeProgram_degreeName) 
-	VALUES (1, (select SSN from tblstudent where tblUser_userID = userid), termapplied, degree);
-
- end if;
-
-END $$
-
-DELIMITER ; 
-
 -- ------------------------------- 
+
+/***************************************************************************
+* Name:		setInquire2
+* Purpose: 	To provide inquire functionality  for students
+*
+* Inputs:	termapplied,firstname,midinitial,lastname,
+* 			socialnumb,emailid,phonenumb,streetaddr,
+* 			ct,st,zipcode,gpa,sat,degree,interest
+*
+* Usage: 	call ais.setInquire2 ('Fall2015', 'Swetha', 'K', 'Reddy', '987-65-4321', 'swetha@gmail.com', 
+			'618-303-9865', 'stella drive', 'charlotte', 'al', '28262', 3.00, 2289, 'ComputerScience', 'Dining'); 
+***************************************************************************/
+
 
 DROP PROCEDURE IF EXISTS setInquire2;
 
@@ -1126,8 +1135,7 @@ CREATE PROCEDURE AIS.setInquire2 (
 BEGIN
 
 
-/* users from inquire tab */
-/* SSN doesnot exist - new user */
+/* For inquire tab functionality:  SSN doesnot exist - new user */
 
  if socialnumb not in (select SSN from tblStudent) then 
 
@@ -1138,23 +1146,51 @@ BEGIN
 
    UPDATE tblUser SET password=(SELECT RIGHT(SSN,4) from tblStudent where tblUser_userID = Last_Insert_id()) WHERE userID=Last_Insert_id();
 
-   update tblStudent set inStateFlag = 1 where state = 'nc';
+   update tblStudent set inStateFlag = 0 where state = 'NC';
 
-   select userID from ais.tblUser;
 
 end if;
 
 
-/* SSN exists (Existing user) and new user  */
+/* For Inquire tab functionaltiy: SSN exists (Existing user) and new user  */
+	select distinct
+		Last_Insert_id() as userID
+	from
+		ais.tblUser;
 
+	SELECT 
+		SSN,
+		fName,
+		mInitial,
+		lName,
+		strAddress,
+		city,
+		state,
+		zip,
+		email,
+		phone,
+		SAT,
+		GPA
+	FROM
+		tblStudent
+	WHERE
+		SSN = socialnumb;
 
-   SELECT SSN, fName, mInitial, lName, strAddress, city, state, zip , email, phone, SAT , GPA FROM tblStudent WHERE SSN = socialnumb;
+   REPLACE INTO ais.tblInquireApply (inquireFlag, tblStudent_SSN, termApplied, tblDegreeProgram_degreeName) 
+	VALUES (1, socialnumb, termapplied, degree);
 
-   REPLACE INTO ais.tblInquireApply (inquireFlag, tblStudent_SSN, termApplied, tblDegreeProgram_degreeName) VALUES (1, socialnumb, termapplied, degree);
-
-   SELECT degreeName, InfoMessage FROM ais.tblDegreeProgram WHERE degreeName = degree 
-   UNION
-   SELECT CollegeLifeName, collegeLifeInfoMessage FROM ais.tblCollegeLife WHERE CollegeLifeName = interest;
+	SELECT 
+		degreeName, InfoMessage
+	FROM
+		ais.tblDegreeProgram
+	WHERE
+		degreeName = degree 
+	UNION SELECT 
+		CollegeLifeName, collegeLifeInfoMessage
+	FROM
+		ais.tblCollegeLife
+	WHERE
+		CollegeLifeName = interest;
   
 END $$
 
@@ -1162,6 +1198,14 @@ DELIMITER ;
 
 
 -- -------------------------------------
+
+/***************************************************************************
+* Name:		setParameter
+* Purpose: 	To set the parameters for each term by the admin
+* Inputs:	termapplied,gpaweight,satweight,outofstateweight,gpathreshold,satthreshold.
+* Usage: 	CALL AIS.setParameter ('Spring 2014', 20, 20, 20, 4.00, 1800);
+***************************************************************************/
+
 
 DELIMITER $$
 
@@ -1183,18 +1227,12 @@ DELIMITER ;
 
 -- --------------------------------------- 
 
-delimiter $$
-CREATE PROCEDURE setUsers ()
-
-BEGIN
-
- INSERT INTO tblUser (password,tblRole_roleID) VALUES(0000,3);
-
-END $$
-
-delimiter ;
-
--- --------------------------------------------
+/***************************************************************************
+* Name:		setAccept
+* Purpose: 	To provide with functionality to accept students 
+* Inputs:	SSN, term, degreeName
+* Usage: 	CALL AIS.setAccept ('365-968-241','Spring 2014','Biological Sciences');
+***************************************************************************/
 
 use ais;
 
@@ -1209,7 +1247,7 @@ begin
 -- update tblinquireapply set applicationstatus 
 update tblinquireapply as ia 
 set 
-    ia.applicationStatus = 'Accepted'
+    ia.applicationStatus = 'Accept'
 where ia.tblStudent_SSN = SSN
         and ia.tblDegreeProgram_degreeName =  degreeName; 
 
@@ -1218,7 +1256,12 @@ END $$
 DELIMITER ;
 
 -- ---------------------------------------------
-
+/***************************************************************************
+* Name:		setDeny
+* Purpose: 	To provide with functionality for students to deny
+* Inputs:	SSN, term, degreeName
+* Usage: 	CALL AIS.setAccept ('365-968-241','Spring 2014','Biological Sciences');
+***************************************************************************/
 
 drop procedure if exists setDeny;
 
@@ -1241,7 +1284,12 @@ DELIMITER ;
 
 
 -- ---------------------------------------------
-
+/***************************************************************************
+* Name:		getStudentDetail
+* Purpose: 	To provide with functionality for students to deny
+* Inputs:	SSN, term, degreeName
+* Usage: 	CALL AIS.getStudentDetail ('Spring 2015','Anthropology');
+***************************************************************************/
 
 drop procedure if exists getStudentDetail;
 
@@ -1330,7 +1378,17 @@ DELIMITER ;
 
 -- ------------------------------------
 
+/***************************************************************************
+* Name:		getLogin
+* Purpose: 	To provide with functionality for students login application
+* Inputs:	IN_userID, IN_passwd 
+* Usage: 	call ais.getLogin (2, '-111');
+***************************************************************************/
+
 DROP PROCEDURE IF EXISTS getLogin;
+
+
+/*Alter table tblUser CHANGE password passwd CHAR(4);*/
 
 DELIMITER $$
 
@@ -1344,55 +1402,63 @@ CREATE PROCEDURE AIS.getLogin (
 BEGIN
 
  /*Authenticate the user with userid and password then pick his roleID for further lookUp*/
-select 
-    tblRole_roleID
-into @roleID from
-    tblUser
-where
-    userID = IN_userID
-        and password = IN_passwd;
+ select count(tblRole_roleID) into @roleID  from tblUser where userID = IN_userID and passwd = IN_passwd;
 
- select @roleID;
- 
-   /*If Login successful roleID is 'not null' else return 'false' and come out of if*/
-  if(ifnull(@roleID,false)) then
+     /*If Login successful roleID is 'not null' else return 'false' and come out of if*/
+  if(@roleID = 1) then
 
+		select tblRole_roleID into @roleID  from tblUser where userID = IN_userID and passwd = IN_passwd;
 		/*lookup role table with current role ID */
-		select 
-			tr.roleName
-		into @role from
-			tblRole tr
-		where
-			tr.roleID = @roleID;
+		select tr.roleName into @role  from tblRole tr where tr.roleID = @roleID;
+
+		SELECT @role;
 
 		/* if role name is either 'Admin','Administrator' return Admin details */
 		if(@role in ('Admin','Administrator')) then
-		 select * from tblAdmissionClerk where tblUser_userID = IN_userID;
+		 select 
+				'null' as fName,
+				'null' as mInitial,
+				'null' as lName,
+				'null' as strAddress,
+				'null' as city,
+				'null' as state,
+				'null' as zip,
+				'null' as inStateFlag,
+				'null' as email,
+				'null' as phone,
+				'null' as tblUser_userID,
+				'null' as SSN,
+				'null' as SAT,
+				'null' as GPA,
+				'null' as termApplied,
+				'null' as tblDegreeProgram_degreeName,
+				'true' as isAdminFlag;
 		else
 		/* if role is 'Student' then return student details including his degree and term from EnquireApplyTable*/
-		select 
-			fName,
-			mInitial,
-			lName,
-			strAddress,
-			city,
-			state,
-			zip,
-			inStateFlag,
-			email,
-			phone,
-			tblUser_userID,
-			SSN,
-			SAT,
-			GPA,
-			tbI.termApplied,
-			tbI.tblDegreeProgram_degreeName
-		from
-			tblStudent tbS,
-			tblinquireapply tbI
-		where
-			tblUser_userID = IN_userID
-        and tbS.SSN = tbI.tblStudent_SSN;
+		 select 
+				fName,
+				mInitial,
+				lName,
+				strAddress,
+				city,
+				state,
+				zip,
+				inStateFlag,
+				email,
+				phone,
+				tblUser_userID,
+				SSN,
+				SAT,
+				GPA,
+				tbI.termApplied,
+				tbI.tblDegreeProgram_degreeName,
+				'false' as isAdminFlag
+		from 
+				tblStudent tbS,tblinquireapply tbI 
+		where 
+				tblUser_userID = IN_userID 
+				and 
+				tbS.SSN = tbI.tblStudent_SSN;
 		  
 		end if;
 
@@ -1404,9 +1470,18 @@ where
  
 END $$
 
-DELIMITER ; 
+DELIMITER ;
 
 -- ------------------------------- 
+/***************************************************************************
+* Name:		setApply
+* Purpose: 	To provide with functionality for students to apply
+* Inputs:	IN_SSN,IN_fName,IN_mInitial,IN_lName,IN_strAddr,IN_City,IN_State,IN_zip,IN_email,
+*			IN_phoneNum,IN_SAT,IN_GPA,IN_collegeLifeName,IN_termName,IN_degreeName
+* Usage: 	call ais.setApply ('111-111-777', 'Krishna', 'L', 'Chaitanya', 'Clories Road', 'Clevland', 'OH', '38943', 
+			'chaitanya@uncc.edu', '454-465-8499', 2340, 2.75,'Health','Spring 2014','Computer Science');
+
+***************************************************************************/
 
 DROP PROCEDURE IF EXISTS setApply;
 
@@ -1440,6 +1515,7 @@ BEGIN
 /* USER APPLIES FIRST TIME WITHOUT ENQUIRE OR LOGIN */
 if IN_SSN not in (select SSN from tblStudent) then
 
+   insert into tblUser (password,tblRole_roleID) values (0000,3);
    insert into ais.tblStudent (SSN, fName, mInitial, lName, strAddress, city, state, zip, email, phone, SAT, GPA, tblUser_userID)
    values (IN_SSN, IN_fName , IN_mInitial, IN_lName, IN_strAddr, IN_City, IN_State, IN_zip, IN_email, IN_phoneNum, IN_SAT, IN_GPA, Last_Insert_id());
 
@@ -1458,8 +1534,8 @@ update tblStudent
 set 
     inStateFlag = 1
 where
-    state = 'nc';
-
+    state = 'NC';
+   
  end if;
 /* END CREATION OF USER IN USER TABLE AND STUDENT TABLE  AND THEIR MAPPING*/
 
@@ -1476,7 +1552,8 @@ SELECT
     email,
     phone,
     SAT,
-    GPA
+    GPA,
+    tblUser_userID
 FROM
     ais.tblStudent
 WHERE
@@ -1502,28 +1579,24 @@ where
 	/* INSERT OR UPDATE IF USER HAS NOT APPLIED ALREADY */
 		REPLACE INTO ais.tblInquireApply (applyFlag, tblStudent_SSN, termApplied, tblDegreeProgram_degreeName) VALUES (1, IN_SSN, IN_termName, IN_degreeName);
 
-	end if; 
+	end if;
 
     /* SELECT THE OTHER DETAILS REQUIRED FOR OUTPUT ON SCREEN */
 	SELECT 
-		degreeName, InfoMessage
-	FROM
-		ais.tblDegreeProgram
-	WHERE
-		degreeName = IN_degreeName 
-	UNION SELECT 
-		CollegeLifeName, collegeLifeInfoMessage
-	FROM
-		ais.tblCollegeLife
-	WHERE
-		CollegeLifeName = IN_collegeLifeName;		
+    degreeName, InfoMessage
+FROM
+    ais.tblDegreeProgram
+WHERE
+    degreeName = IN_degreeName 
+UNION SELECT 
+    CollegeLifeName, collegeLifeInfoMessage
+FROM
+    ais.tblCollegeLife
+WHERE
+    CollegeLifeName = IN_collegeLifeName;		
 
  
 END $$
 
 DELIMITER ;
-
--- ----------------------------------------- 
-
-
 
