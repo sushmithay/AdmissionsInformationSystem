@@ -11,5 +11,6 @@ namespace AdmissionsInformationSystem.View
 		{
 			InitializeComponent();
 		}
+
 	}
 }

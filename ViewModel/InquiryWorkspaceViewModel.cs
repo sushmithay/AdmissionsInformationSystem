@@ -6,6 +6,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.ObjectModel;
 using System.Data;
+using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 
@@ -84,7 +85,9 @@ namespace AdmissionsInformationSystem.ViewModel
 		{
 			if(Validate())
 			{
-				DataTable result = Database.Proc("setInquire2", (new[] {
+				try
+				{
+					DataTable result = Database.Proc("setInquire2", (new[] {
 					new MySqlParameter("socialnumb", Student.SocialSecurityNumber),
 					new MySqlParameter("firstname", Student.FirstName),
 					new MySqlParameter("midinitial", Student.MiddleInitial ?? "a"),
@@ -97,20 +100,49 @@ namespace AdmissionsInformationSystem.ViewModel
 					new MySqlParameter("phonenumb", Student.PhoneNumber ?? "a"),
 					new MySqlParameter("sat", Student.SAT),
 					new MySqlParameter("gpa", Student.GPA),
-					new MySqlParameter("interest", CollegeLife[SelectedInterest]),
+					new MySqlParameter("interest", string.Join(",",
+						from c in CollegeLife
+						where c.Selected
+						select c)),
 					new MySqlParameter("termapplied", Terms[SelectedTerm]),
-					new MySqlParameter("degree", DegreePrograms[SelectedProgram])
+					new MySqlParameter("degree", string.Join(",", 
+						from p in DegreePrograms
+						where p.Selected
+						select p))
 				}));
 
-				string program = Database.Query("SELECT InfoMessage from tbldegreeprogram where degreeName = '" +
-					DegreePrograms[SelectedProgram] + "'").Rows[0]["InfoMessage"].ToString();
+					string program = string.Join("\n\n",
+						from DataRow row in
+							Database.Query(
+								"SELECT InfoMessage from tbldegreeprogram where degreeName IN ('" +
+								string.Join("','",
+								from p in DegreePrograms
+								where p.Selected
+								select p) + "')").Rows
+						select row["InfoMessage"].ToString());
 
-				string interest = Database.Query("SELECT collegeLifeInfoMessage from tblcollegelife where CollegeLifeName = '" +
-					CollegeLife[SelectedInterest] + "'").Rows[0]["collegeLifeInfoMessage"].ToString();
+					string interest = string.Join("\n\n",
+						from DataRow row in
+							Database.Query(
+								"SELECT collegeLifeInfoMessage from tblcollegelife where CollegeLifeName IN ('" +
+								string.Join("','",
+								from c in CollegeLife
+								where c.Selected
+								select c) + "')").Rows
+						select row["collegeLifeInfoMessage"].ToString());
 
-				string collegeLife = "\n\nCollege Life Information\n===================================\n" + interest;
-				string degreePrograms = "\n\nDegree Program Information\n===================================\n" + program;
-				MessageBox.Show("Thank you for inquiring. Here is some information related to your request." + collegeLife + degreePrograms);
+					string collegeLife = "\n\nCollege Life Information\n===================================\n" + interest;
+					string degreePrograms = "\n\nDegree Program Information\n===================================\n" + program;
+					DataRow user = result.Rows[0];
+					MessageBox.Show("Thank you for inquiring. An account was created for you\n" +
+						"\nUsername: " + user["UserName"].ToString() + "\nPassword: " + user["UserPassword"].ToString()
+						+ "\n\nHere is some information relating to your request:" + collegeLife + degreePrograms);
+				}
+				catch
+				{
+					MessageBox.Show("If you have already applied, please allow three months for your application to be received. " +
+						"If you need additional assistance, please submit a ticket.");
+				}
 			}
 		}
 
@@ -141,13 +173,14 @@ namespace AdmissionsInformationSystem.ViewModel
 					if(result != null && result.Rows.Count > 0)
 					{
 						DataRow user = result.Rows[0];
-						MessageBox.Show("Thank you for applying. Your application has been sent to the student records administration office for processing." +
+						MessageBox.Show("Thank you for applying. Your application has been sent to the student records administration office for processing.\n" +
 							"\nUsername: " + user["UserName"].ToString() + "\nPassword: " + user["UserPassword"].ToString());
 					}
 				}
-				catch(Exception ex)
+				catch
 				{
-					MessageBox.Show("Error: " + ex.Message);
+					MessageBox.Show("If you have already applied, please allow three months for your application to be received. " +
+						"If you need additional assistance, please submit a ticket.");
 				}
 			}
 		}

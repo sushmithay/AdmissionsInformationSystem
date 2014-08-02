@@ -67,15 +67,16 @@
     <Compile Include="Context\MySqlObjectSet.cs" />
     <Compile Include="Context\ParameterContext.cs" />
     <Compile Include="Data\Database.cs" />
+    <Compile Include="Model\Approvals.cs" />
     <Compile Include="Model\CollegeLife.cs" />
     <Compile Include="Model\DegreeProgram.cs" />
     <Compile Include="Model\Term.cs" />
     <Compile Include="Model\Parameter.cs" />
     <Compile Include="Patterns\IWorkObject.cs" />
+    <Compile Include="ViewModel\AcceptDenyViewModel.cs" />
     <Compile Include="ViewModel\InquiryWorkspaceViewModel.cs" />
     <Compile Include="ViewModel\AdminWorkspaceViewModel.cs" />
     <Compile Include="ViewModel\ParameterViewModel.cs" />
-    <Compile Include="ViewModel\StudentApprovalsViewModel.cs" />
     <Compile Include="ViewModel\StudentViewModel.cs" />
     <Compile Include="View\AdminWorkspaceView.xaml.cs">
       <DependentUpon>AdminWorkspaceView.xaml</DependentUpon>
@@ -90,6 +91,7 @@
     <Compile Include="View\StudentApprovalsView.xaml.cs">
       <DependentUpon>StudentApprovalsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\StudentApprovalsViewModel.cs" />
     <Compile Include="View\StudentDetailView.xaml.cs">
       <DependentUpon>StudentDetailView.xaml</DependentUpon>
     </Compile>

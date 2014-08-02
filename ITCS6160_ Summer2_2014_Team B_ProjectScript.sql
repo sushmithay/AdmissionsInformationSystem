@@ -212,6 +212,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 *
 *************************************************************************************************************************/
 
+
 use ais; 
 
 insert into `AIS`.`tblRole` (roleName,roleType) values ("Admin","View");
@@ -223,232 +224,241 @@ insert into `AIS`.`tblUser` (password,tblRole_roleID) values("101",1);
 insert into `AIS`.`tblUser` (password,tblRole_roleID) values("102",2);
 
 
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("7",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("10",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("11",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("12",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("13",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("14",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("15",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("16",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("17",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("18",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("19",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("20",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("21",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("22",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("23",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("24",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("25",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("26",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("27",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("28",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("29",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("30",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("31",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("32",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("33",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("34",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("35",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("36",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("37",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("38",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("39",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("40",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("41",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("42",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("43",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("44",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("45",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("46",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("47",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("48",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("49",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("50",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("51",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("52",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("53",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("54",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("55",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("56",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("57",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("58",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("59",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("60",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("61",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("62",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("63",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("64",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("65",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("66",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("67",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("68",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("69",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("70",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("71",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("72",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("73",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("74",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("75",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("76",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("77",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("78",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("79",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("80",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("81",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("82",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("83",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("84",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("85",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("86",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("87",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("88",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("89",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("90",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("91",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("92",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("93",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("94",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("95",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("96",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("97",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("98",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("99",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("100",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("101",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("102",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("103",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("104",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("105",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("106",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("107",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("108",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("109",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("110",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("111",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("112",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("113",3);
-insert into `AIS`.`tblUser` (password,tblRole_roleID) values("114",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1801",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3829",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9538",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4772",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3971",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6899",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1801",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3829",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9538",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4772",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9731",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6899",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1801",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3829",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9538",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4772",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3973",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6899",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1801",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3829",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9538",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4772",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3973",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6899",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1801",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3829",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9538",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4772",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3973",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6899",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1801",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3829",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9538",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4772",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3973",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6899",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1801",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3829",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6899",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9538",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4772",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9029",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9020",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6287",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5698",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8635",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9325",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5968",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8635",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6632",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5325",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9587",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4254",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5587",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("2971",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8352",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5478",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8352",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8324",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8658",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8325",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8241",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("7325",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("2986",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6214",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5632",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5985",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4120",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5695",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5985",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8365",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5985",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8517",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3147",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3973",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6889",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("6695",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("5139",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("0236",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("2552",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("0469",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1950",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("7410",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9239",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("2282",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8479",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("7131",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8748",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1291",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("0135",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("0817",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("8939",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3646",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("0585",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("0739",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1493",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3574",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("2283",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("9959",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("4151",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("7912",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("1493",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("3574",3);
+insert into `AIS`.`tblUser` (password,tblRole_roleID) values("2288",3);
 
 
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-381-801","Phani","Bonda","N","Albmarle road","Charlotte","NC",28262,"phani@uncc.edu","704-381-8012",2.50,1500,0,3);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-763-829","Daniel","Hero","K","Jhon Krik dr","Atlanta","GA",28275,"daniel@uncc.edu","704-763-8291",2.76,1640,1,4);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-989-538","Roxolona","Buckle","Q","Wt Harris Blvd","Alabama","SC",29362,"roxo@uncc.edu","704-989-5381",3.0,1780,1,5);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-654-772","Kern","Ginger","P","JW Clay Road","Charlotte","NC",24562,"kern@uncc.edu","790-585-5769",3.27,1920,0,6);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("618-303-971","Swetha","Metireddy","K","Milton Road","Los Angles","CA",38262,"swetha@uncc.edu","676-686-4859",3.55,2060,1,7);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-626-899","Sushmita","Yalla","P","Sharone Emity Dr","Cary","NC",24262,"sylla@uncc.edu","575-906-5859",3.76,2200,0,8);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-858-585","Krishna","Chaitanya","L","Clories Road","Clevland","OH",38943,"chaitanya@uncc.edu","454-465-8499",2.75,2340,1,9);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-381-801","Arvind","Bhatt","G","Albmarle road","Charlotte","NC",28262,"Arvind@uncc.edu","565-575-9483",2.60,1520,0,10);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-763-829","Ashok","Arumugan","K","Jhon Krik dr","Atlanta","GA",28275,"Ashok@uncc.edu","456-984-0983",2.86,1660,1,11);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-989-538","Sumanth","Krishnan","t","Wt Harris Blvd","Alabama","SC",29362,"Sumanth@uncc.edu","567-957-9584",3.10,1800,1,12);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-654-772","Messi","leona","r","JW Clay Road","Charlotte","NC",24562,"Messi@uncc.edu","675-688-6869",3.30,1940,0,13);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("983-039-731","Ronaldo","Cristiano","D","Milton Road","Los Angles","CA",38262,"Ronaldo@uncc.edu","567-098-0457",3.65,2080,1,14);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-626-899","devi","sri","p","Sharone Emity Dr","Cary","NC",24262,"devi@uncc.edu","908-098-4532",3.85,2200,0,15);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-858-585","Steven","jobs","p","Clories Road","Clevland","OH",38943,"Steven@uncc.edu","849-094-4846",3.00,2360,1,16);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-381-801","William","Gates","H","Albmarle road","Charlotte","NC",28262,"William@uncc.edu","464-937-4849",2.70,1540,0,17);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-858-585","Ehrich","Weiss","H","Clories Road","Clevland","OH",38943,"Ehrich@uncc.edu","784-039-0293",4.00,2000,1,18);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-763-829","Mukesh","Ambani","D","Jhon Krik dr","Atlanta","GA",28275,"Mukesh@uncc.edu","484-949-0293",2.96,1680,1,19);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-989-538","Anil","Ambani","k","Wt Harris Blvd","Alabama","SC",29362,"Anil@uncc.edu","786-393-3034",3.20,1820,1,20);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-654-772","Kitrick","Thomas","w","JW Clay Road","Charlotte","NC",24562,"Kitrick@uncc.edu","945-505-2345",3.40,1960,0,21);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("818-303-973","John","Lucas","H","Milton Road","Los Angles","CA",38262,"John@uncc.edu","786-930-5674",3.75,2100,1,22);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-626-899","Henry","Thoro","D","Sharone Emity Dr","Cary","NC",24262,"Henry@uncc.edu","897-903-8765",3.95,2240,0,23);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-858-585","Obama","Barack","H","Clories Road","Clevland","OH",38943,"Obama@uncc.edu","786-033-0934",3.25,1500,"1",24);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-381-801","George","Herbert","B","Albmarle road","Charlotte","NC",28262,"George@uncc.edu","996-027-5803",2.55,1560,0,25);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-763-829","Prathiba","patel","S","Jhon Krik dr","Atlanta","GA",28275,"Prathiba@uncc.edu","848-893-9043",2.79,1700,1,26);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-989-538","Kamal","Kannan","K","Wt Harris Blvd","Alabama","SC",29362,"Kamal@uncc.edu","565-585-0383",3.05,1840,1,27);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-654-772","Kranthi","Tiyyagura","K","JW Clay Road","Charlotte","NC",24562,"Kranthi@uncc.edu","567-099-0933",3.40,1980,0,28);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("618-303-973","Sesha","Ventrapragada","S","Milton Road","Los Angles","CA",38262,"Sesha@uncc.edu","783-039-0392",3.50,2120,1,29);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-626-899","Sushmita","Yalla","P","Sharone Emity Dr","Cary","NC",24262,"sylla@uncc.edu","234-039-0282",3.80,2260,0,30);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-858-585","Einstein","Albert","E","Clories Road","Clevland","OH",38943,"Einstein@uncc.edu","980-254-0883",3.50,1700,1,31);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-381-801","Portia","Rossi","D","Albmarle road","Charlotte","NC",28262,"Portia@uncc.edu","768-393-0292",2.65,1580,0,32);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-763-829","George","Michel","K","Jhon Krik dr","Atlanta","GA",28275,"George@uncc.edu","980-029-9282",2.89,1720,1,33);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-989-538","Yemma","Watson","H","Wt Harris Blvd","Alabama","SC",29362,"Yemma@uncc.edu","982-029-0929",3.15,1860,1,34);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-654-772","Kern","Ginger","P","JW Clay Road","Charlotte","NC",24562,"kern@uncc.edu","876-939-9382",3.50,2000,0,35);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("518-303-973","Rayn","Gosling","J","Milton Road","Los Angles","CA",38262,"Rayn@uncc.edu","872-923-9378",3.60,2140,1,36);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-626-899","Tom","Cruise","L","Sharone Emity Dr","Cary","NC",24262,"Tom@uncc.edu","873-928-8370",3.90,2280,0,37);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-858-585","Kate","Winslet","H","Clories Road","Clevland","OH",38943,"Kate@uncc.edu","783-038-0392",3.75,1800,1,38);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-381-801","Nomar","Garciaparra","G","Albmarle road","Charlotte","NC",28262,"Nomar@uncc.edu","863-938-9022",2.75,1600,0,39);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-763-829","Garth","Garth","L","Jhon Krik dr","Atlanta","GA",28275,"Garth@uncc.edu","793-937-9029",2.99,1740,1,40);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-989-538","Arnold","Schwar","Z","Wt Harris Blvd","Alabama","SC",29362,"Arnold@uncc.edu","783-923-0292",3.25,1880,1,41);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-654-772","Vin","Diesel","P","JW Clay Road","Charlotte","NC",24562,"Vin@uncc.edu","899-938-9229",3.49,2020,0,42);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("418-303-973","Donnie ","Walberg","J","Milton Road","Los Angles","CA",38262,"Donnie@uncc.edu","983-048-0239",3.70,2160,1,43);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-626-899","Cassandra","Peter","S","Sharone Emity Dr","Cary","NC",24262,"Cassandra@uncc.edu","980-029-0283",3.82,2300,0,44);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-858-585","Elizabeth","Pantaleoni","P","Clories Road","Clevland","OH",38943,"Elizabeth@uncc.edu","765-049-9493",4.00,1900,1,45);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-381-801","Ilyena","lydia","V","Albmarle road","Charlotte","NC",28262,"Ilyena@uncc.edu","675-029-9284",2.59,1620,0,46);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-763-829","Julie","smith","M","Jhon Krik dr","Atlanta","GA",28275,"Julie@uncc.edu","784-933-0948",2.83,1760,1,47);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-626-899","Norma","Jean","M","Sharone Emity Dr","Cary","NC",24262,"Norma@uncc.edu","894-038-0389",3.92,2320,0,48);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-989-538","Steveland","judkins","W","Wt Harris Blvd","Alabama","SC",29362,"Steveland@uncc.edu","784-029-0283",3.22,2040,1,49);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-654-772","Stephen","Hackins","K","JW Clay Road","Charlotte","NC",24562,"Stephen@uncc.edu","765-029-0298",3.33,1400,0,50);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("897-029-029","jack","Feber","P","HillGuest Road","Columbus","OH",78632,"feber@uncc.edu","987-938-8372",3.00,2100,1,51);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("786-029-020","iggy","Eleses","L","Farsing Street","ingleert","ND",89212,"iggy@uncc.edu","908-937-0382",3.95,1900,1,52);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("783-826-287","Lamer","Ross","I","Sidroek Blvd.","Atlanta","GA",90823,"lamer@uncc.edu","908-721-920",2.09,1700,1,53);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("552-365-698","Gary","Fedrick","H","krocks street","SanJose","CA",76573,"Gary@uncc.edu","784-039-0293",3.20,2300,1,54);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("215-968-635","jack","Fruit","S","Silent Canyon","Pie Town","IO",12564,"jack@uncc.edu","459-695-3265",3.00,1900,1,55);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("201-639-325","Grant","Hanson","Q","Little Cedar Chase","Burnt Ranch","IN",25489,"grant@uncc.edu","458-487-9995",3.79,2000,1,56);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("012-635-968","Gail","curtis","E","Shady bluff parkway","Du Point","MN",51571,"curtis@uncc.edu","124-965-3265",3.56,2000,1,57);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("012-698-635","Anita","Parsins","P","Clear Bay","Flea Hill","MI",25622,"parsins@uncc.edu","896-654-3652",3.69,2200,1,58);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("254-986-632","Lorenzo","Mitchell","O","Velvet Hollow","Ticaboo","MD",52475,"mitchell@uncc.edu","124-965-3265",3.89,2000,1,59);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("128-965-325","Robin","Peter","P","Cotton Circle","St. Gregor","MD",28262,"peter@uncc.edu","236-214-6325",2.89,2000,1,60);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("124-639-587","Pat","Gregory","H","Quiet Towers","kragter","OH",85974,"pat@uncc.edu","225-968-6521",3.90,2300,1,61);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("365-784-254","Emily","Scandoval","H","Clories Road","Clevland","OH",89562,"emily@uncc.edu","229-665-8754",3.69,2100,1,62);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("128-635-587","Martha","Hale","H","Clories Escatawapia Road","Maine","ME",36598,"halem@uncc.edu","125-698-6953",3.69,2010,1,63);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("968-652-971","Veronica","Nichols","H","Foggy Log Place","Speedsville","MD",25687,"veronica@uncc.edu","125-698-6523",4.00,2200,1,64);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("564-698-352","Roger","Hicks","H","Fallen Boulvard","Boos","AK",98756,"hicks@uncc.edu","326-695-6325",3.68,2300,1,65);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("369-865-478","Woodrow","Wilkins","H","Honey Sky Gate","Pabst","WA",69456,"wilkins@uncc.edu","126-695-6945",3.26,2150,1,66);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("124-698-352","Bradley","Gordon","H","Emerald","Forty Fort","SC",69841,"gordon@uncc.edu","784-039-029",4.00,2250,1,67);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("784-968-324","Doyle","Lawrence","H","Gentle treasure trail","Gays Mills","SD",56987,"doyle@uncc.edu","458-958-6325",2.75,2600,1,68);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("123-968-658","Bradly","Kim","H","Heather Mountain Street","Four States","TX",12458,"kimb@uncc.edu","125-968-3265",4.00,2350,1,69);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("487-698-325","Edgar","Jackson","H","GrandRoad","Odyssey","NF",38943,"edger@uncc.edu","124-652-9685",3.78,2100,1,70);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("365-968-241","Dwayne","lloyd","H","Pleasant Oak Green","Great Good Place","NF",36589,"dwayne@uncc.edu","154-968-9652",3.69,1800,1,71);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("332-987-325","Lowell","Medina","H","High Glen","King Willam","SD",14652,"lowell@uncc.edu","125-632-9856",2.65,900,1,72);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("264-962-986","Bethany","Ross","H","Rustic Swale","life","OR",98546,"bethany@uncc.edu","145-632-9856",3.68,2050,1,73);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("655-986-214","Estelle","Carr","H","Lost Autumn Townline","Cumming","CL",35594,"estelle@uncc.edu","152-632-9568",3.21,2080,1,74);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("251-985-632","Lynette","Ellis","H","Wishing Manor","Prosper","MN",24983,"lynette@uncc.edu","154-326-8597",3.21,2090,1,75);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("514-365-985","Andres","Hill","H","Quaking Panda Avenue","Stettler","OH",84596,"hill@uncc.edu","458-965-3265",4.00,2190,1,76);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("325-964-120","Douglas","Duncan","H","Old Passage","Devils Slide","TX",54896,"duncan@uncc.edu","784-965-7849",4.00,2260,1,77);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("989-515-695","Norman","Carroll","H","Umber Grove","Ice Mine","OR",25498,"norman@uncc.edu","102-658-9652",3.26,2350,1,78);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("124-695-985","Pete","Sanchez","H","Colonial Maze","Grand Bay-Westfield","DE",12486,"pete@uncc.edu","784-695-6325",3.89,2120,1,79);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("125-698-365","Edwin","Daniels","H","Iron Brook Trace","Noon","PA",98125,"edwin@uncc.edu","125-632-6985",3.90,2000,1,80);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("145-365-985","Elbert","Guzman","H","Sleepy Nector Street","Clevland","OH",38943,"elbert@uncc.edu","125-632-6398",4.00,2000,1,81);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("145-968-517","Amelia","Brooks","H","Clotyr Road","Rome","LO",78956,"amelia@uncc.edu","102-698-6523",3.23,2000,1,82);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("582-963-147","Margarita","Freeman","H","CRed Robin Blvd.","Clevland","OH",12489,"freemanm@uncc.edu","784-698-6325",3.96,2000,1,83);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("318-303-973","Archibald","Alexander","L","Milton Road","Los Angles","CA",38262,"Archibald@uncc.edu","894-039-0458",3.75,2180,1,84);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-626-889","Nothern","Forth","B","Sharone Emity Dr","Cary","NC",24262,"Norma@uncc.edu","894-038-0389",3.92,2320,0,85);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-888-585","Eric","Sony","W","Clories Road","Clevland","OH",38943,"Ehrich@uncc.edu","784-039-0293",4.00,2000,1,86);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("021-986-695","leo","Dicaprio","S","SunHeat Street","West California","CA",87634,"leo@uncc.edu","807-902-9082",3.00,2100,1,87);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("313-785-139","Samantha","Kenwald","T","Iron Fox Glade", "Stettler", "Ar", 72093," Tsamantha@unnc.edu ","727-971-2911",3.23,2013,1,88);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("722-410-236","madison","Kemeco","U","Umber Island Swale", "Roddy", "Oh", 43444,"Umadison@unnc.edu ","371-948-7485",3.34,1956,1,89);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("477-982-552","Jane","Smith","H","Rocky Isle", "Lizard", "SC", 29515,"Hjane@unnc.edu  ","247-227-1312",3.45,2012,1,90);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("277-890-469","Kerry","Lee","D","Emerald Blossom Nook", "Kitts Hummock", "MI", 39374,"Dkerry@unnc.edu","449-428-4791",3.67,2109,1,91);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("879-851-950","Kathy","lesly","A","Stony Boulevard", "Lone Star", "SC", 29262,"Akathy@unnc.edu","547-922-2821",3.89,2301,1,92);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("348-517-410","Jason","Daniels","C","Merry Private", "Jot Em Down Store", "LO", 70726,"Cjason@unnc.edu","282-209-2390",3.65,2106,1,93);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("282-209-239","Kenny","wald","W","Bright Valley"," Normalville", "WV", 25578,"Wkenny@unnc.edu","348-517-4109",3.67,1601,1,94);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("547-922-282","Jenny","stone","S","Lazy Elk Hill", "Purdytown", "AK", 72725,"Sjenny@unnc.edu","879-851-9502",3.78,2301,1,95);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("449-428-479","Michelle","han","Z","Round Expressway", "Mile Point", "RI", 02816,"Zmichelle@unnc.edu","277-890-4699",3.34,2301,1,96);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("247-227-131","Grace","Genny","B","Gentle Beacon Forest", "Pennsylvania", "WS", 15927,"Bgrace@unnc.edu","477-982-5528",3.56,1901,1,97);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("371-948-748","Rachel","McCarthy","H","Misty Via"," Mudtown", "HA", 96862,"Hrachel@unnc.edu","722-410-2366",3.23,2100,1,98);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("627-971-291","Kathleen","Kelly","I","Quiet Promenade", "The Bottle", "CT", 06150,"Ikathleen@unnc.edu","313-785-1396",3.34,2210,1,99);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("107-570-135","Katie","norton","K","Velvet Thicket", "Regina Beach", "TE", 37647,"Kkatie@unnc.edu","998-174-1517",3.45,2300,1,100);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("683-640-817","Sherline","joans","S","Grand Robin Diversion"," Punnichy", "NM", 87535,"Ssherline@unnc.edu","848-679-9591",3.78,1892,1,101);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("535-428-939","Kathy","jonas","H","Cotton Lookout", "Quidnick", "HA", 96868,"Dkathy@unnc.edu","647-902-2830",3.02,1111,1,102);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("135-343-646","Hannah","Stuert","D","Easy Orchard", "Swan Hills","NM", 87162,"Ehannah@unnc.edu","252-523-5742",3.23,2300,1,103);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("920-590-585","Penny","marino","E", "Green Pond Circuit", "Loafers Corner", "NU", 78624,"Epenny@unnc.edu","762-771-4930",3.34,2250,1,104);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("425-270-739","lisa","hanson","E","Dewy Stead", "Rush Run", "WV", 25118,"Elisa@unnc.edu","592-637-9120",3.56,2210,1,105);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("262-771-493","poojitha","reddy","C","Cinder Rise By-pass", "Missionary","TE", 37812,"Ceenna@unnc.edu","925-590-5858",3.20,2103,1,106);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("352-523-574","harsha","ari","S","Silent Anchor Highway", "Cheeseville", "WV", 25873,"Semily@unnc.edu","857-343-6465",3.60,1960,1,107);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("647-902-283","varun","singh","F","Foggy Square","Cocked Hat","NC", 27564,"Fkerli@unnc.edu","853-428-9397",3.02,1340,1,108);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("848-679-959","Gemma","Jaywald","G","Honey Willow Link","Trickum","GA", 39968,"Ggemma@unnc.edu","883-640-8177",3.03,1780,1,109);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("998-174-151","Emma","Genkins","W","Jagged Hills Villas"," Buffalo","NM", 88214,"Wemma@unnc.edu","807-570-1358",3.13,1903,1,110);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("592-637-912","Sofia","ross","A","Sunny Heights", "Coats", "MA", 02780,"Asofia@unnc.edu","425-270-7398",3.30,2056,1,111);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("762-771-493","Jenna","Doh","C","Cinder Rise By-pass", "Missionary","TR", 37812,"Jenna@unnc.edu","920-590-5858",3.20,2103,1,112);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("252-523-574","Emily","saks","S","Silent Anchor Highway", "Cheeseville", "WV", 25873,"emily@unnc.edu","835-343-6465",3.60,1960,1,113);
-insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("647-902-288","Kerli","wilson","F","Foggy Square","Cocked Hat","NC", 27564,"kerli@unnc.edu","835-428-9397",3.02,1340,1,114);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-38-1801","Phani","Bonda","N","Albmarle road","Charlotte","NC",28262,"phani@uncc.edu","704-381-8012",2.50,1500,0,3);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-76-3829","Daniel","Hero","K","Jhon Krik dr","Atlanta","GA",28275,"daniel@uncc.edu","704-763-8291",2.76,1640,1,4);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-98-9538","Roxolona","Buckle","Q","Wt Harris Blvd","Alabama","SC",29362,"roxo@uncc.edu","704-989-5381",3.0,1780,1,5);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-65-4772","Kern","Ginger","P","JW Clay Road","Charlotte","NC",24562,"kern@uncc.edu","790-585-5769",3.27,1920,0,6);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("618-30-3971","Swetha","Metireddy","K","Milton Road","Los Angles","CA",38262,"swetha@uncc.edu","676-686-4859",3.55,2060,1,7);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-62-6899","Sushmita","Yalla","P","Sharone Emity Dr","Cary","NC",24262,"sylla@uncc.edu","575-906-5859",3.76,2200,0,8);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("704-85-8585","Krishna","Chaitanya","L","Clories Road","Clevland","OH",38943,"chaitanya@uncc.edu","454-465-8499",2.75,2340,1,9);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-38-1801","Arvind","Bhatt","G","Albmarle road","Charlotte","NC",28262,"Arvind@uncc.edu","565-575-9483",2.60,1520,0,10);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-76-3829","Ashok","Arumugan","K","Jhon Krik dr","Atlanta","GA",28275,"Ashok@uncc.edu","456-984-0983",2.86,1660,1,11);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-98-9538","Sumanth","Krishnan","t","Wt Harris Blvd","Alabama","SC",29362,"Sumanth@uncc.edu","567-957-9584",3.10,1800,1,12);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-65-4772","Messi","leona","r","JW Clay Road","Charlotte","NC",24562,"Messi@uncc.edu","675-688-6869",3.30,1940,0,13);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("983-03-9731","Ronaldo","Cristiano","D","Milton Road","Los Angles","CA",38262,"Ronaldo@uncc.edu","567-098-0457",3.65,2080,1,14);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-62-6899","devi","sri","p","Sharone Emity Dr","Cary","NC",24262,"devi@uncc.edu","908-098-4532",3.85,2200,0,15);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("904-85-8585","Steven","jobs","p","Clories Road","Clevland","OH",38943,"Steven@uncc.edu","849-094-4846",3.00,2360,1,16);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-38-1801","William","Gates","H","Albmarle road","Charlotte","NC",28262,"William@uncc.edu","464-937-4849",2.70,1540,0,17);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-85-8585","Ehrich","Weiss","H","Clories Road","Clevland","OH",38943,"Ehrich@uncc.edu","784-039-0293",4.00,2000,1,18);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-76-3829","Mukesh","Ambani","D","Jhon Krik dr","Atlanta","GA",28275,"Mukesh@uncc.edu","484-949-0293",2.96,1680,1,19);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-98-9538","Anil","Ambani","k","Wt Harris Blvd","Alabama","SC",29362,"Anil@uncc.edu","786-393-3034",3.20,1820,1,20);
+
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-65-4772","Kitrick","Thomas","w","JW Clay Road","Charlotte","NC",24562,"Kitrick@uncc.edu","945-505-2345",3.40,1960,0,21);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("818-30-3973","John","Lucas","H","Milton Road","Los Angles","CA",38262,"John@uncc.edu","786-930-5674",3.75,2100,1,22);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-62-6899","Henry","Thoro","D","Sharone Emity Dr","Cary","NC",24262,"Henry@uncc.edu","897-903-8765",3.95,2240,0,23);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("804-85-8585","Obama","Barack","H","Clories Road","Clevland","OH",38943,"Obama@uncc.edu","786-033-0934",3.25,1500,"1",24);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-38-1801","George","Herbert","B","Albmarle road","Charlotte","NC",28262,"George@uncc.edu","996-027-5803",2.55,1560,0,25);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-76-3829","Prathiba","patel","S","Jhon Krik dr","Atlanta","GA",28275,"Prathiba@uncc.edu","848-893-9043",2.79,1700,1,26);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-98-9538","Kamal","Kannan","K","Wt Harris Blvd","Alabama","SC",29362,"Kamal@uncc.edu","565-585-0383",3.05,1840,1,27);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-65-4772","Kranthi","Tiyyagura","K","JW Clay Road","Charlotte","NC",24562,"Kranthi@uncc.edu","567-099-0933",3.40,1980,0,28);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("618-30-3973","Sesha","Ventrapragada","S","Milton Road","Los Angles","CA",38262,"Sesha@uncc.edu","783-039-0392",3.50,2120,1,29);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-62-6899","Sushmita","Yalla","P","Sharone Emity Dr","Cary","NC",24262,"sylla@uncc.edu","234-039-0282",3.80,2260,0,30);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("604-85-8585","Einstein","Albert","E","Clories Road","Clevland","OH",38943,"Einstein@uncc.edu","980-254-0883",3.50,1700,1,31);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-38-1801","Portia","Rossi","D","Albmarle road","Charlotte","NC",28262,"Portia@uncc.edu","768-393-0292",2.65,1580,0,32);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-76-3829","George","Michel","K","Jhon Krik dr","Atlanta","GA",28275,"George@uncc.edu","980-029-9282",2.89,1720,1,33);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-98-9538","Yemma","Watson","H","Wt Harris Blvd","Alabama","SC",29362,"Yemma@uncc.edu","982-029-0929",3.15,1860,1,34);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-65-4772","Kern","Ginger","P","JW Clay Road","Charlotte","NC",24562,"kern@uncc.edu","876-939-9382",3.50,2000,0,35);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("518-30-3973","Rayn","Gosling","J","Milton Road","Los Angles","CA",38262,"Rayn@uncc.edu","872-923-9378",3.60,2140,1,36);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-62-6899","Tom","Cruise","L","Sharone Emity Dr","Cary","NC",24262,"Tom@uncc.edu","873-928-8370",3.90,2280,0,37);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("504-85-8585","Kate","Winslet","H","Clories Road","Clevland","OH",38943,"Kate@uncc.edu","783-038-0392",3.75,1800,1,38);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-38-1801","Nomar","Garciaparra","G","Albmarle road","Charlotte","NC",28262,"Nomar@uncc.edu","863-938-9022",2.75,1600,0,39);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-76-3829","Garth","Garth","L","Jhon Krik dr","Atlanta","GA",28275,"Garth@uncc.edu","793-937-9029",2.99,1740,1,40);
+
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-98-9538","Arnold","Schwar","Z","Wt Harris Blvd","Alabama","SC",29362,"Arnold@uncc.edu","783-923-0292",3.25,1880,1,41);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-65-4772","Vin","Diesel","P","JW Clay Road","Charlotte","NC",24562,"Vin@uncc.edu","899-938-9229",3.49,2020,0,42);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("418-30-3973","Donnie ","Walberg","J","Milton Road","Los Angles","CA",38262,"Donnie@uncc.edu","983-048-0239",3.70,2160,1,43);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-62-6899","Cassandra","Peter","S","Sharone Emity Dr","Cary","NC",24262,"Cassandra@uncc.edu","980-029-0283",3.82,2300,0,44);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("404-85-8585","Elizabeth","Pantaleoni","P","Clories Road","Clevland","OH",38943,"Elizabeth@uncc.edu","765-049-9493",4.00,1900,1,45);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-38-1801","Ilyena","lydia","V","Albmarle road","Charlotte","NC",28262,"Ilyena@uncc.edu","675-029-9284",2.59,1620,0,46);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-76-3829","Julie","smith","M","Jhon Krik dr","Atlanta","GA",28275,"Julie@uncc.edu","784-933-0948",2.83,1760,1,47);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-62-6899","Norma","Jean","M","Sharone Emity Dr","Cary","NC",24262,"Norma@uncc.edu","894-038-0389",3.92,2320,0,48);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-98-9538","Steveland","judkins","W","Wt Harris Blvd","Alabama","SC",29362,"Steveland@uncc.edu","784-029-0283",3.22,2040,1,49);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-65-4772","Stephen","Hackins","K","JW Clay Road","Charlotte","NC",24562,"Stephen@uncc.edu","765-029-0298",3.33,1400,0,50);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("897-02-9029","jack","Feber","P","HillGuest Road","Columbus","OH",78632,"feber@uncc.edu","987-938-8372",3.00,2100,1,51);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("786-02-9020","iggy","Eleses","L","Farsing Street","ingleert","ND",89212,"iggy@uncc.edu","908-937-0382",3.95,1900,1,52);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("783-82-6287","Lamer","Ross","I","Sidroek Blvd.","Atlanta","GA",90823,"lamer@uncc.edu","908-721-920",2.09,1700,1,53);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("552-36-5698","Gary","Fedrick","H","krocks street","SanJose","CA",76573,"Gary@uncc.edu","784-039-0293",3.20,2300,1,54);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("215-96-8635","jack","Fruit","S","Silent Canyon","Pie Town","IO",12564,"jack@uncc.edu","459-695-3265",3.00,1900,1,55);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("201-63-9325","Grant","Hanson","Q","Little Cedar Chase","Burnt Ranch","IN",25489,"grant@uncc.edu","458-487-9995",3.79,2000,1,56);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("012-63-5968","Gail","curtis","E","Shady bluff parkway","Du Point","MN",51571,"curtis@uncc.edu","124-965-3265",3.56,2000,1,57);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("012-69-8635","Anita","Parsins","P","Clear Bay","Flea Hill","MI",25622,"parsins@uncc.edu","896-654-3652",3.69,2200,1,58);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("254-98-6632","Lorenzo","Mitchell","O","Velvet Hollow","Ticaboo","MD",52475,"mitchell@uncc.edu","124-965-3265",3.89,2000,1,59);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("128-96-5325","Robin","Peter","P","Cotton Circle","St. Gregor","MD",28262,"peter@uncc.edu","236-214-6325",2.89,2000,1,60);
+
+
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("124-63-9587","Pat","Gregory","H","Quiet Towers","kragter","OH",85974,"pat@uncc.edu","225-968-6521",3.90,2300,1,61);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("365-78-4254","Emily","Scandoval","H","Clories Road","Clevland","OH",89562,"emily@uncc.edu","229-665-8754",3.69,2100,1,62);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("128-63-5587","Martha","Hale","H","Clories Escatawapia Road","Maine","ME",36598,"halem@uncc.edu","125-698-6953",3.69,2010,1,63);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("968-65-2971","Veronica","Nichols","H","Foggy Log Place","Speedsville","MD",25687,"veronica@uncc.edu","125-698-6523",4.00,2200,1,64);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("564-69-8352","Roger","Hicks","H","Fallen Boulvard","Boos","AK",98756,"hicks@uncc.edu","326-695-6325",3.68,2300,1,65);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("369-86-5478","Woodrow","Wilkins","H","Honey Sky Gate","Pabst","WA",69456,"wilkins@uncc.edu","126-695-6945",3.26,2150,1,66);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("124-69-8352","Bradley","Gordon","H","Emerald","Forty Fort","SC",69841,"gordon@uncc.edu","784-039-029",4.00,2250,1,67);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("784-96-8324","Doyle","Lawrence","H","Gentle treasure trail","Gays Mills","SD",56987,"doyle@uncc.edu","458-958-6325",2.75,2600,1,68);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("123-96-8658","Bradly","Kim","H","Heather Mountain Street","Four States","TX",12458,"kimb@uncc.edu","125-968-3265",4.00,2350,1,69);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("487-69-8325","Edgar","Jackson","H","GrandRoad","Odyssey","NF",38943,"edger@uncc.edu","124-652-9685",3.78,2100,1,70);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("365-96-8241","Dwayne","lloyd","H","Pleasant Oak Green","Great Good Place","NF",36589,"dwayne@uncc.edu","154-968-9652",3.69,1800,1,71);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("332-98-7325","Lowell","Medina","H","High Glen","King Willam","SD",14652,"lowell@uncc.edu","125-632-9856",2.65,900,1,72);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("264-96-2986","Bethany","Ross","H","Rustic Swale","life","OR",98546,"bethany@uncc.edu","145-632-9856",3.68,2050,1,73);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("655-98-6214","Estelle","Carr","H","Lost Autumn Townline","Cumming","CL",35594,"estelle@uncc.edu","152-632-9568",3.21,2080,1,74);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("251-98-5632","Lynette","Ellis","H","Wishing Manor","Prosper","MN",24983,"lynette@uncc.edu","154-326-8597",3.21,2090,1,75);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("514-36-5985","Andres","Hill","H","Quaking Panda Avenue","Stettler","OH",84596,"hill@uncc.edu","458-965-3265",4.00,2190,1,76);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("325-96-4120","Douglas","Duncan","H","Old Passage","Devils Slide","TX",54896,"duncan@uncc.edu","784-965-7849",4.00,2260,1,77);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("989-51-5695","Norman","Carroll","H","Umber Grove","Ice Mine","OR",25498,"norman@uncc.edu","102-658-9652",3.26,2350,1,78);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("124-69-5985","Pete","Sanchez","H","Colonial Maze","Grand Bay-Westfield","DE",12486,"pete@uncc.edu","784-695-6325",3.89,2120,1,79);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("125-69-8365","Edwin","Daniels","H","Iron Brook Trace","Noon","PA",98125,"edwin@uncc.edu","125-632-6985",3.90,2000,1,80);
+
+
+
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("145-36-5985","Elbert","Guzman","H","Sleepy Nector Street","Clevland","OH",38943,"elbert@uncc.edu","125-632-6398",4.00,2000,1,81);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("145-96-8517","Amelia","Brooks","H","Clotyr Road","Rome","LO",78956,"amelia@uncc.edu","102-698-6523",3.23,2000,1,82);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("582-96-3147","Margarita","Freeman","H","CRed Robin Blvd.","Clevland","OH",12489,"freemanm@uncc.edu","784-698-6325",3.96,2000,1,83);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("318-30-3973","Archibald","Alexander","L","Milton Road","Los Angles","CA",38262,"Archibald@uncc.edu","894-039-0458",3.75,2180,1,84);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-62-6889","Nothern","Forth","B","Sharone Emity Dr","Cary","NC",24262,"Norma@uncc.edu","894-038-0389",3.92,2320,0,85);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("304-88-8585","Eric","Sony","W","Clories Road","Clevland","OH",38943,"Ehrich@uncc.edu","784-039-0293",4.00,2000,1,86);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("021-98-6695","leo","Dicaprio","S","SunHeat Street","West California","CA",87634,"leo@uncc.edu","807-902-9082",3.00,2100,1,87);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("313-78-5139","Samantha","Kenwald","T","Iron Fox Glade", "Stettler", "Ar", 72093," Tsamantha@unnc.edu ","727-971-2911",3.23,2013,1,88);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("722-41-0236","madison","Kemeco","U","Umber Island Swale", "Roddy", "Oh", 43444,"Umadison@unnc.edu ","371-948-7485",3.34,1956,1,89);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("477-98-2552","Jane","Smith","H","Rocky Isle", "Lizard", "SC", 29515,"Hjane@unnc.edu  ","247-227-1312",3.45,2012,1,90);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("277-89-0469","Kerry","Lee","D","Emerald Blossom Nook", "Kitts Hummock", "MI", 39374,"Dkerry@unnc.edu","449-428-4791",3.67,2109,1,91);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("879-85-1950","Kathy","lesly","A","Stony Boulevard", "Lone Star", "SC", 29262,"Akathy@unnc.edu","547-922-2821",3.89,2301,1,92);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("348-51-7410","Jason","Daniels","C","Merry Private", "Jot Em Down Store", "LO", 70726,"Cjason@unnc.edu","282-209-2390",3.65,2106,1,93);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("282-20-9239","Kenny","wald","W","Bright Valley"," Normalville", "WV", 25578,"Wkenny@unnc.edu","348-517-4109",3.67,1601,1,94);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("547-92-2282","Jenny","stone","S","Lazy Elk Hill", "Purdytown", "AK", 72725,"Sjenny@unnc.edu","879-851-9502",3.78,2301,1,95);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("449-42-8479","Michelle","han","Z","Round Expressway", "Mile Point", "RI", 02816,"Zmichelle@unnc.edu","277-890-4699",3.34,2301,1,96);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("247-22-7131","Grace","Genny","B","Gentle Beacon Forest", "Pennsylvania", "WS", 15927,"Bgrace@unnc.edu","477-982-5528",3.56,1901,1,97);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("371-94-8748","Rachel","McCarthy","H","Misty Via"," Mudtown", "HA", 96862,"Hrachel@unnc.edu","722-410-2366",3.23,2100,1,98);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("627-97-1291","Kathleen","Kelly","I","Quiet Promenade", "The Bottle", "CT", 06150,"Ikathleen@unnc.edu","313-785-1396",3.34,2210,1,99);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("107-57-0135","Katie","norton","K","Velvet Thicket", "Regina Beach", "TE", 37647,"Kkatie@unnc.edu","998-174-1517",3.45,2300,1,100);
+
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("683-64-0817","Sherline","joans","S","Grand Robin Diversion"," Punnichy", "NM", 87535,"Ssherline@unnc.edu","848-679-9591",3.78,1892,1,101);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("535-42-8939","Kathy","jonas","H","Cotton Lookout", "Quidnick", "HA", 96868,"Dkathy@unnc.edu","647-902-2830",3.02,1111,1,102);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("135-34-3646","Hannah","Stuert","D","Easy Orchard", "Swan Hills","NM", 87162,"Ehannah@unnc.edu","252-523-5742",3.23,2300,1,103);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("920-59-0585","Penny","marino","E", "Green Pond Circuit", "Loafers Corner", "NU", 78624,"Epenny@unnc.edu","762-771-4930",3.34,2250,1,104);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("425-27-0739","lisa","hanson","E","Dewy Stead", "Rush Run", "WV", 25118,"Elisa@unnc.edu","592-637-9120",3.56,2210,1,105);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("262-77-1493","poojitha","reddy","C","Cinder Rise By-pass", "Missionary","TE", 37812,"Ceenna@unnc.edu","925-590-5858",3.20,2103,1,106);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("352-52-3574","harsha","ari","S","Silent Anchor Highway", "Cheeseville", "WV", 25873,"Semily@unnc.edu","857-343-6465",3.60,1960,1,107);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("647-90-2283","varun","singh","F","Foggy Square","Cocked Hat","NC", 27564,"Fkerli@unnc.edu","853-428-9397",3.02,1340,1,108);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("848-67-9959","Gemma","Jaywald","G","Honey Willow Link","Trickum","GA", 39968,"Ggemma@unnc.edu","883-640-8177",3.03,1780,1,109);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("998-17-4151","Emma","Genkins","W","Jagged Hills Villas"," Buffalo","NM", 88214,"Wemma@unnc.edu","807-570-1358",3.13,1903,1,110);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("592-63-7912","Sofia","ross","A","Sunny Heights", "Coats", "MA", 02780,"Asofia@unnc.edu","425-270-7398",3.30,2056,1,111);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("762-77-1493","Jenna","Doh","C","Cinder Rise By-pass", "Missionary","TR", 37812,"Jenna@unnc.edu","920-590-5858",3.20,2103,1,112);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("252-52-3574","Emily","saks","S","Silent Anchor Highway", "Cheeseville", "WV", 25873,"emily@unnc.edu","835-343-6465",3.60,1960,1,113);
+insert into tblStudent (SSN,fName,lName,mInitial,strAddress,city,state,zip,email,phone,GPA,SAT,inStateFlag,tblUser_userID) values("647-90-2288","Kerli","wilson","F","Foggy Square","Cocked Hat","NC", 27564,"kerli@unnc.edu","835-428-9397",3.02,1340,1,114);
+
 
 
 insert into tblTerm(termName) values("Spring 2014");
@@ -499,144 +509,140 @@ insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Diver
 insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Student Computing","Student Computing provides technical support to students through the IT Service Desk. Get help with your NinerNET account, 49er Express, Moodle and other applications. Visit the Student Computing website to find out more about labs, software downloads, wireless access and tips on safe computing.");
 insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Student Affairs","As a vibrant educational institution that emphasizes the development of the individual and the betterment of the community, UNC Charlotte offers students many services and opportunities for personal and professional development. The Division of Student Affairs oversees a number of these services, which are available to help students achieve their educational and personal goals");
 insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Police & Public Safety","UNC Charlotte police officers are on duty 24 hours a day, seven days a week. Officers are assigned to protect the campus in cars, on bicycles, and on foot. The Police and Public Safety team periodically offers self-defense and other safety courses to faculty, staff and students.");
-insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Scholarships", "There are several categories of scholarships available to UNCC students.  Please visit the school’s Scholarship Website for detailed information.  The Levine Scholarship Program provides full tuition, room and board, a grant to implement a service project and four summers of experience.  Scholarships for Merit are awarded to incoming freshmen.  Applicants must receive a nomination from their high school counselor.  Athletic Scholarships are awarded by the coaches of the particular athletic program.  Department Scholarships are awarded by academic departments.  Private Scholarships are also awarded by civic, social and religious organizations.  Students must seek out and apply for private scholarships on their own.");
-insert into tblCollegeLife(CollegeLifeName,collegeLifeInfoMessage) values("Financial Aid", "There are 4 steps to Applying for Financial Aid:  Step 1: Apply for financial aid:  Submit the FAFSA (Free Application for Federal Student Aid). Be sure to enter our school code: 002975.  The priority filing date is March 1st.  All students must reapply every year for financial aid.  Step 2: Review and accept your financial aid award:  View your award in 49er Express.Make sure you don't have any outstanding requirements.  Step 3: Receive your financial aid:  Some refunds will go out the first week of class.  Grants and scholarships may not disburse until after the drop/add period ends.  Step 4:  Maintain financial aid eligibility: A FAFSA needs to be completed annually.  Maintain Satisfactory Academic Progress (SAP).");
-
-
 
 
 insert into `AIS`.`tblAdmissionClerk`(fName,mInitial,lName,tblUser_userID) values("Lei","T","Shang",1);
 insert into `AIS`.`tblAdmissionClerk`(fName,mInitial,lName,tblUser_userID) values("Yu","Z","Liang",2);
 
 
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"704-381-801","Spring 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"704-763-829","Spring 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"704-989-538","Spring 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"704-654-772","Spring 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"618-303-973","Spring 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"704-626-899","Fall 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"704-858-585","Fall 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"904-381-801","Fall 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"904-763-829","Fall 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"904-989-538","Fall 2014","ComputerScience");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"704-989-538","Spring 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"704-989-538","Spring 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"704-654-772","Spring 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"704-654-772","Spring 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"618-303-973","Spring 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"618-303-973","Spring 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"604-858-585","Spring 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"604-858-585","Spring 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-381-801","Spring 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-381-801","Spring 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-763-829","Spring 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-763-829","Spring 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"128-635-587","Spring 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"968-652-971","Spring 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"564-698-352","Spring 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"277-890-469","Spring 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"879-851-950","Spring 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"348-517-410","Spring 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"904-654-772","Spring 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"983-039-731","Spring 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"904-626-899","Spring 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"904-858-585","Spring 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"804-381-801","Spring 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"804-763-829","Fall 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"804-989-538","Fall 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"804-654-772","Fall 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"818-303-973","Fall 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"804-626-899","Fall 2014","Bioinformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"804-858-585","Spring 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"604-381-801","Spring 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"604-763-829","Spring 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"604-989-538","Spring 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"604-654-772","Spring 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"504-989-538","Fall 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"504-654-772","Fall 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"518-303-973","Fall 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"504-626-899","Fall 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-858-585","Fall 2014","SIS");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"618-303-971","Spring 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"604-626-899","Spring 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"604-858-585","Spring 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"504-381-801","Spring 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-763-829","Spring 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"404-381-801","Fall 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"404-763-829","Fall 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"404-989-538","Fall 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"404-654-772","Fall 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"418-303-973","Fall 2014","HealthInformatics");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"404-626-899","Spring 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"404-858-585","Spring 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"304-381-801","Spring 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"304-763-829","Spring 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"304-989-538","Spring 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"304-654-772","Spring 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"318-303-973","Spring 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"304-626-899","Spring 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"304-858-585","Spring 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"897-029-029","Spring 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,0,"786-029-020","Fall 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"783-826-287","Fall 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"552-365-698","Fall 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"021-986-695","Fall 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"215-968-635","Fall 2014","EngineeringTechnology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"201-639-325","Fall 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"012-635-968","Fall 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"012-698-635","Fall 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"254-986-632","Fall 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"128-965-325","Fall 2014","EnergyProduction");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"124-639-587","Spring 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"365-784-254","Spring 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"128-635-587","Spring 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"968-652-971","Spring 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"564-698-352","Spring 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"369-865-478","Fall 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"124-698-352","Fall 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"784-968-324","Fall 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"123-968-658","Fall 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"487-698-325","Fall 2014","Anthropology");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"365-968-241","Spring 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"332-987-325","Spring 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"264-962-986","Spring 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"655-986-214","Spring 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"251-985-632","Spring 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"514-365-985","Fall 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"325-964-120","Fall 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"989-515-695","Fall 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"124-695-985","Fall 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"125-698-365","Fall 2014","Biological Sciences");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"145-365-985","Spring 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"145-968-517","Spring 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"582-963-147","Spring 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"592-637-912","Spring 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"762-771-493","Spring 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"252-523-574","Fall 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"647-902-283","Fall 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"848-679-959","Fall 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"998-174-151","Fall 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"313-785-139","Fall 2014","Chemistry");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"722-410-236","Spring 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"477-982-552","Spring 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"277-890-469","Spring 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"879-851-950","Spring 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"348-517-410","Spring 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"282-209-239","Fall 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"547-922-282","Fall 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"449-428-479","Fall 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"247-227-131","Fall 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"371-948-748","Fall 2014","Communication Studies");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"627-971-291","Spring 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"107-570-135","Spring 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"683-640-817","Spring 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"535-428-939","Spring 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"135-343-646","Spring 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",0,1,"920-590-585","Fall 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,0,"425-270-739","Fall 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"262-771-493","Fall 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"352-523-574","Fall 2014","Criminal Justice");
-insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"647-902-283","Fall 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"704-38-1801","Spring 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"704-76-3829","Spring 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"704-98-9538","Spring 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"704-65-4772","Spring 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"618-30-3973","Spring 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"704-62-6899","Fall 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"704-85-8585","Fall 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"904-38-1801","Fall 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"904-76-3829","Fall 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"904-98-9538","Fall 2014","ComputerScience");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"704-98-9538","Spring 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"704-98-9538","Spring 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"704-65-4772","Spring 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"704-65-4772","Spring 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"618-30-3973","Spring 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"618-30-3973","Spring 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"604-85-8585","Spring 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"604-85-8585","Spring 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-38-1801","Spring 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-38-1801","Spring 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-76-3829","Spring 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-76-3829","Spring 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"128-63-5587","Spring 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"968-65-2971","Spring 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"564-69-8352","Spring 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"277-89-0469","Spring 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"879-85-1950","Spring 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"348-51-7410","Spring 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"904-65-4772","Spring 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"983-03-9731","Spring 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"904-62-6899","Spring 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"904-85-8585","Spring 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"804-38-1801","Spring 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"804-76-3829","Fall 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"804-98-9538","Fall 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"804-65-4772","Fall 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"818-30-3973","Fall 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"804-62-6899","Fall 2014","Bioinformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"804-85-8585","Spring 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"604-38-1801","Spring 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"604-76-3829","Spring 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"604-98-9538","Spring 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"604-65-4772","Spring 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"504-98-9538","Fall 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"504-65-4772","Fall 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"518-30-3973","Fall 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"504-62-6899","Fall 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-85-8585","Fall 2014","SIS");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"618-30-3971","Spring 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"604-62-6899","Spring 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"604-85-8585","Spring 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"504-38-1801","Spring 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"504-76-3829","Spring 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"404-38-1801","Fall 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"404-76-3829","Fall 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"404-98-9538","Fall 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"404-65-4772","Fall 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"418-30-3973","Fall 2014","HealthInformatics");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"404-62-6899","Spring 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"404-85-8585","Spring 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"304-38-1801","Spring 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"304-76-3829","Spring 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"304-98-9538","Spring 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"304-65-4772","Spring 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"318-30-3973","Spring 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"304-62-6899","Spring 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"304-85-8585","Spring 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"897-02-9029","Spring 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,0,"786-02-9020","Fall 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"783-82-6287","Fall 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"552-36-5698","Fall 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"021-98-6695","Fall 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"215-96-8635","Fall 2014","EngineeringTechnology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"201-63-9325","Fall 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"012-63-5968","Fall 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"012-69-8635","Fall 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"254-98-6632","Fall 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"128-96-5325","Fall 2014","EnergyProduction");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"124-63-9587","Spring 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"365-78-4254","Spring 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"128-63-5587","Spring 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"968-65-2971","Spring 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"564-69-8352","Spring 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"369-86-5478","Fall 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"124-69-8352","Fall 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"784-96-8324","Fall 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"123-96-8658","Fall 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"487-69-8325","Fall 2014","Anthropology");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"365-96-8241","Spring 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"332-98-7325","Spring 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"264-96-2986","Spring 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"655-98-6214","Spring 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"251-98-5632","Spring 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"514-36-5985","Fall 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"325-96-4120","Fall 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"989-51-5695","Fall 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"124-69-5985","Fall 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"125-69-8365","Fall 2014","Biological Sciences");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"145-36-5985","Spring 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"145-96-8517","Spring 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"582-96-3147","Spring 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"592-63-7912","Spring 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"762-77-1493","Spring 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"252-52-3574","Fall 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"647-90-2283","Fall 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"848-67-9959","Fall 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"998-17-4151","Fall 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"313-78-5139","Fall 2014","Chemistry");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"722-41-0236","Spring 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"477-98-2552","Spring 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"277-89-0469","Spring 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"879-85-1950","Spring 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"348-51-7410","Spring 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"282-20-9239","Fall 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"547-92-2282","Fall 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"449-42-8479","Fall 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"247-22-7131","Fall 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"371-94-8748","Fall 2014","Communication Studies");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"627-97-1291","Spring 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"107-57-0135","Spring 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,1,"683-64-0817","Spring 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"535-42-8939","Spring 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"135-34-3646","Spring 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,0,1,"920-59-0585","Fall 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values(null,1,0,"425-27-0739","Fall 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("null",1,1,"262-77-1493","Fall 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Accept",1,0,"352-52-3574","Fall 2014","Criminal Justice");
+insert into tblInquireApply(applicationStatus,applyFlag,inquireFlag,tblStudent_SSN,termApplied,tblDegreeProgram_degreeName) values("Deny",1,1,"647-90-2283","Fall 2014","Criminal Justice");
 
 
 insert into tblSeatsAvailable(seatsAvailable,tblDegreeProgram_degreeName,tblTerm_termName) values(100,"Bioinformatics","Spring 2014");
@@ -946,7 +952,7 @@ END
 
 DELIMITER ;
 
--- ----------------------
+
 
 /***************************************************************************
 * Name:		getParameter
@@ -977,7 +983,7 @@ END $$
 
 DELIMITER ;
 
--- -----------------------
+
 
 /***************************************************************************
 * Name:		getPersonalInterest
@@ -1065,7 +1071,7 @@ END||
 DELIMITER ;
 
 
--- -----------------------------------------
+
 
 /***************************************************************************
 * Name:		getTerm
@@ -1095,7 +1101,6 @@ END
 
 DELIMITER ; 
 
--- ------------------------------- 
 
 /***************************************************************************
 * Name:		setInquire2
@@ -1129,8 +1134,8 @@ CREATE PROCEDURE AIS.setInquire2 (
  IN zipcode CHAR(5), 
  IN gpa DECIMAL(3,2), 
  IN sat INT, 
- IN degree VARCHAR(100), 
- IN interest VARCHAR(45))
+ IN degree VARCHAR(255), 
+ IN interest VARCHAR(255))
 
 BEGIN
 
@@ -1151,53 +1156,36 @@ BEGIN
 
 end if;
 
+/* Processes multiple degree programs passed except the last*/
 
-/* For Inquire tab functionaltiy: SSN exists (Existing user) and new user  */
-	select distinct
-		Last_Insert_id() as userID
-	from
-		ais.tblUser;
+while instr(degree,',') > 0 do
+   
+set @strSize = length(degree);
+ set @firstIndex = instr(degree,',') -1;
+ set @currDegree = substring(degree,1,@firstIndex);
+set @firstIndex = @firstIndex + 2;
+set degree = substring(degree,@firstIndex,@strSize);
 
-	SELECT 
-		SSN,
-		fName,
-		mInitial,
-		lName,
-		strAddress,
-		city,
-		state,
-		zip,
-		email,
-		phone,
-		SAT,
-		GPA
-	FROM
-		tblStudent
-	WHERE
-		SSN = socialnumb;
+/*  FOR EACH DEGREE */
 
    REPLACE INTO ais.tblInquireApply (inquireFlag, tblStudent_SSN, termApplied, tblDegreeProgram_degreeName) 
+	VALUES (1, socialnumb, termapplied, @currDegree);
+
+/* END FOR EACH DEGREE */
+
+end while;
+
+     REPLACE INTO ais.tblInquireApply (inquireFlag, tblStudent_SSN, termApplied, tblDegreeProgram_degreeName) 
 	VALUES (1, socialnumb, termapplied, degree);
 
-	SELECT 
-		degreeName, InfoMessage
-	FROM
-		ais.tblDegreeProgram
-	WHERE
-		degreeName = degree 
-	UNION SELECT 
-		CollegeLifeName, collegeLifeInfoMessage
-	FROM
-		ais.tblCollegeLife
-	WHERE
-		CollegeLifeName = interest;
+
+	SELECT Last_Insert_id() AS UserName, RIGHT(socialnumb, 4) AS UserPassword;
   
 END $$
 
 DELIMITER ;
 
 
--- -------------------------------------
 
 /***************************************************************************
 * Name:		setParameter
@@ -1225,7 +1213,7 @@ END $$
 
 DELIMITER ;
 
--- --------------------------------------- 
+
 
 /***************************************************************************
 * Name:		setAccept
@@ -1255,7 +1243,7 @@ END $$
 
 DELIMITER ;
 
--- ---------------------------------------------
+
 /***************************************************************************
 * Name:		setDeny
 * Purpose: 	To provide with functionality for students to deny
@@ -1283,26 +1271,25 @@ END $$
 DELIMITER ; 
 
 
--- ---------------------------------------------
+
 /***************************************************************************
 * Name:		getStudentDetail
 * Purpose: 	To provide with functionality for students to deny
 * Inputs:	SSN, term, degreeName
-* Usage: 	CALL AIS.getStudentDetail ('Spring 2015','Anthropology');
+* Usage: 	CALL AIS.getStudentDetail ('Fall 2014','EnergyProduction');
 ***************************************************************************/
+use ais;
 
 drop procedure if exists getStudentDetail;
 
 DELIMITER $$
-create procedure getStudentDetail (term varchar(15), degreeName varchar(15)) 
+create procedure getStudentDetail (term varchar(15), degreeName varchar(100)) 
 begin 
 
 
 -- Create a temp table for applied students with ApplyFlg = yes and ApplicationStatus = Null 
 --  and the matching availableDegreeProgramsID 
-create temporary table if not exists 
-	tempapplied 
-engine=myISAM as 
+create table tempapplied as 
 (select 
     via.SSN,
     via.fName,
@@ -1330,24 +1317,31 @@ from
 where
     via.applyFlag = 1 
         and via.applicationStatus is null
-        and via.degreeName = degreeName); 
+        and via.degreeName = degreeName
+		and via.termApplied = term); 
 
 
--- Check if there is room in each Program / Term.  Count of current should not be more than the max seats available 
-create temporary table if not exists 
-	tempfull
-engine=myISAM as 
+-- list term and degreeName where seats are available 
+create table tempavailable as 
 (select 
-    count(distinct SSN) as countStudents,
-    seatsAvailable,
-    termApplied,
-    degreeName
-from tempapplied 
-where applicationStatus = 'Accept'
-group by seatsAvailable,
-		 termApplied,
-		 degreeName
-having count(distinct SSN) >= seatsAvailable );
+    via.termApplied,
+    via.degreeName 
+from
+    vinquireapply via
+        inner join
+    vseatsavailable as vsa 
+		ON vsa.tblDegreeProgram_degreeName = via.degreeName
+        and vsa.tblTerm_termName = via.termApplied
+where 
+			via.applyFlag = 1 
+        and via.applicationStatus is null
+        and via.degreeName = degreeName
+		and via.termApplied = term
+group by     
+		via.termApplied,
+		via.degreeName,
+		vsa.seatsAvailable
+having count(via.ssn) < vsa.seatsAvailable) ; 
 
 
 -- output 
@@ -1358,25 +1352,37 @@ select
     ta.GPA,
     ta.SAT,
     ta.inStateFlag,
-    (vp.GPAWeight * ta.GPA) + (vp.SATWeight * ta.SAT) + (vp.OutOfStateWeight * ta.inStateFlag) as desirabilitymetric
+	(	(vp.GPAWeight * ta.GPA) + 
+		(vp.SATWeight * ta.SAT) + 
+		(vp.OutOfStateWeight * ta.inStateFlag) 
+	) as desirabilitymetric
 from
     vparameter as vp
         inner join
     tempapplied as ta ON vp.tblTerm_termName = ta.termApplied 
-	left join tempfull as tf on tf.termApplied = ta.termApplied 
-							and tf.degreeName = ta.degreeName 
+		inner join 
+	tempavailable as tav on tav.termApplied = ta.termApplied 
+						and tav.degreeName = ta.degreeName 
 where
     ta.GPA >= vp.GPAThreshold
-        and ta.SAT >= vp.SATThreshold
-		and tf.countStudents <= tf.seatsAvailable; 
+	and ta.SAT >= vp.SATThreshold
+order by 
+	(	(vp.GPAWeight * ta.GPA) + 
+		(vp.SATWeight * ta.SAT) + 
+		(vp.OutOfStateWeight * ta.inStateFlag) 
+	); 
 
+
+-- cleanup 
+drop table tempapplied;
+drop table tempavailable;
 
 
 END $$ 
 
 DELIMITER ; 
 
--- ------------------------------------
+
 
 /***************************************************************************
 * Name:		getLogin
@@ -1384,11 +1390,7 @@ DELIMITER ;
 * Inputs:	IN_userID, IN_passwd 
 * Usage: 	call ais.getLogin (2, '-111');
 ***************************************************************************/
-
 DROP PROCEDURE IF EXISTS getLogin;
-
-
-/*Alter table tblUser CHANGE password passwd CHAR(4);*/
 
 DELIMITER $$
 
@@ -1402,63 +1404,53 @@ CREATE PROCEDURE AIS.getLogin (
 BEGIN
 
  /*Authenticate the user with userid and password then pick his roleID for further lookUp*/
- select count(tblRole_roleID) into @roleID  from tblUser where userID = IN_userID and passwd = IN_passwd;
+select 
+    tblRole_roleID
+into @roleID from
+    tblUser
+where
+    userID = IN_userID
+        and password = IN_passwd;
 
-     /*If Login successful roleID is 'not null' else return 'false' and come out of if*/
-  if(@roleID = 1) then
+   /*If Login successful roleID is 'not null' else return 'false' and come out of if*/
+  if(ifnull(@roleID,false)) then
 
-		select tblRole_roleID into @roleID  from tblUser where userID = IN_userID and passwd = IN_passwd;
 		/*lookup role table with current role ID */
-		select tr.roleName into @role  from tblRole tr where tr.roleID = @roleID;
-
-		SELECT @role;
+		select 
+			tr.roleName
+		into @role from
+			tblRole tr
+		where
+			tr.roleID = @roleID;
 
 		/* if role name is either 'Admin','Administrator' return Admin details */
 		if(@role in ('Admin','Administrator')) then
-		 select 
-				'null' as fName,
-				'null' as mInitial,
-				'null' as lName,
-				'null' as strAddress,
-				'null' as city,
-				'null' as state,
-				'null' as zip,
-				'null' as inStateFlag,
-				'null' as email,
-				'null' as phone,
-				'null' as tblUser_userID,
-				'null' as SSN,
-				'null' as SAT,
-				'null' as GPA,
-				'null' as termApplied,
-				'null' as tblDegreeProgram_degreeName,
-				'true' as isAdminFlag;
+		 select * from tblAdmissionClerk where tblUser_userID = IN_userID;
 		else
 		/* if role is 'Student' then return student details including his degree and term from EnquireApplyTable*/
-		 select 
-				fName,
-				mInitial,
-				lName,
-				strAddress,
-				city,
-				state,
-				zip,
-				inStateFlag,
-				email,
-				phone,
-				tblUser_userID,
-				SSN,
-				SAT,
-				GPA,
-				tbI.termApplied,
-				tbI.tblDegreeProgram_degreeName,
-				'false' as isAdminFlag
-		from 
-				tblStudent tbS,tblinquireapply tbI 
-		where 
-				tblUser_userID = IN_userID 
-				and 
-				tbS.SSN = tbI.tblStudent_SSN;
+		select 
+			fName,
+			mInitial,
+			lName,
+			strAddress,
+			city,
+			state,
+			zip,
+			inStateFlag,
+			email,
+			phone,
+			tblUser_userID,
+			SSN,
+			SAT,
+			GPA,
+			tbI.termApplied,
+			tbI.tblDegreeProgram_degreeName
+		from
+			tblStudent tbS,
+			tblinquireapply tbI
+		where
+			tblUser_userID = IN_userID
+        and tbS.SSN = tbI.tblStudent_SSN;
 		  
 		end if;
 
@@ -1470,9 +1462,10 @@ BEGIN
  
 END $$
 
-DELIMITER ;
+DELIMITER ; 
 
--- ------------------------------- 
+
+
 /***************************************************************************
 * Name:		setApply
 * Purpose: 	To provide with functionality for students to apply
@@ -1484,8 +1477,6 @@ DELIMITER ;
 ***************************************************************************/
 
 DROP PROCEDURE IF EXISTS setApply;
-
-
 
 DELIMITER $$
 
@@ -1503,9 +1494,9 @@ CREATE PROCEDURE AIS.setApply (
  IN IN_phoneNum CHAR(12), 
  IN IN_SAT int(11),
  IN IN_GPA DECIMAL(3,2),   
- IN IN_collegeLifeName VARCHAR(45), 
+ IN IN_collegeLifeName VARCHAR(255), 
  IN IN_termName VARCHAR(15),
- IN IN_degreeName VARCHAR(100)
+ IN IN_degreeName VARCHAR(255)
 )
 
  
@@ -1540,25 +1531,45 @@ where
 /* END CREATION OF USER IN USER TABLE AND STUDENT TABLE  AND THEIR MAPPING*/
 
 
-SELECT 
-    SSN,
-    fName,
-    mInitial,
-    lName,
-    strAddress,
-    city,
-    state,
-    zip,
-    email,
-    phone,
-    SAT,
-    GPA,
-    tblUser_userID
-FROM
-    ais.tblStudent
-WHERE
-    SSN = IN_SSN;
-  
+/* Processes multiple degree programs passed except the last*/
+
+
+while instr(IN_degreeName,',') > 0 do
+   
+set @strSize = length(IN_degreeName);
+ set @firstIndex = instr(IN_degreeName,',') -1;
+ set @currDegree = substring(IN_degreeName,1,@firstIndex);
+set @firstIndex = @firstIndex + 2;
+set IN_degreeName = substring(IN_degreeName,@firstIndex,@strSize);
+
+/*  FOR EACH DEGREE */
+
+select 
+    count(*)
+into @isApplied from
+    tblInquireApply
+where
+    tblStudent_SSN = IN_SSN
+        and tblDegreeProgram_degreeName = @currDegree
+        and termApplied = IN_termName
+        and applyFlag = 1;
+
+	
+	if(@isApplied = 1) then
+		
+	select "already applied";
+					
+	else
+	/* INSERT OR UPDATE IF USER HAS NOT APPLIED ALREADY */
+		REPLACE INTO ais.tblInquireApply (applyFlag, tblStudent_SSN, termApplied, tblDegreeProgram_degreeName) VALUES (1, IN_SSN, IN_termName, @currDegree);
+
+	end if;
+
+/* END FOR EACH DEGREE */
+
+end while;
+
+
 /* IF THERE EXISTS A USER WHO HAS ALREADY APPLIED FOR THE DEGREE AND TERM COMBINATION */
 	select 
     count(*)
@@ -1580,23 +1591,12 @@ where
 		REPLACE INTO ais.tblInquireApply (applyFlag, tblStudent_SSN, termApplied, tblDegreeProgram_degreeName) VALUES (1, IN_SSN, IN_termName, IN_degreeName);
 
 	end if;
-
+  
     /* SELECT THE OTHER DETAILS REQUIRED FOR OUTPUT ON SCREEN */
-	SELECT 
-    degreeName, InfoMessage
-FROM
-    ais.tblDegreeProgram
-WHERE
-    degreeName = IN_degreeName 
-UNION SELECT 
-    CollegeLifeName, collegeLifeInfoMessage
-FROM
-    ais.tblCollegeLife
-WHERE
-    CollegeLifeName = IN_collegeLifeName;		
+	SELECT Last_Insert_id() AS UserName, RIGHT(IN_SSN, 4) AS UserPassword;
 
- 
 END $$
 
 DELIMITER ;
+
 

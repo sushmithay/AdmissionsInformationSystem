@@ -12,12 +12,7 @@ namespace AdmissionsInformationSystem.View
             InitializeComponent();
         }
 
-        public void generate(object sender, RoutedEventArgs e)
-        {
 
-            var viewModel = DataContext as StudentApprovalsViewModel;
-           // listBox.ItemsSource = viewModel.Students;
-        }
 
     }
 	
