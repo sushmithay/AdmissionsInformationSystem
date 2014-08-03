@@ -19,6 +19,7 @@ namespace AdmissionsInformationSystem.ViewModel
 			OnPropertyChanged("LastName");
 			OnPropertyChanged("GPA");
 			OnPropertyChanged("SAT");
+            OnPropertyChanged("DesirabilityMetric");
 		}
 
 		public AcceptDenyViewModel(Approvals student)
@@ -100,6 +101,19 @@ namespace AdmissionsInformationSystem.ViewModel
 				OnPropertyChanged("SAT");
 			}
 		}
+
+        public float DesirabilityMetric
+        {
+            get
+            {
+                return student.DesirabilityMetric;
+            }
+            set
+            {
+                student.DesirabilityMetric = value;
+                OnPropertyChanged("DesirabilityMetric");
+            }
+        }
 
 		public bool Selected { get; set; }
 	}

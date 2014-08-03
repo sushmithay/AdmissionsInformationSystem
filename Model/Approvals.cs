@@ -12,6 +12,7 @@ namespace AdmissionsInformationSystem.Model
 		public string InState { get; set; }
 		public float GPA { get; set; }
 		public int SAT { get; set; }
+        public float DesirabilityMetric { get; set; }
 		public bool Selected { get; set; }
 
 		public Approvals()
@@ -27,18 +28,7 @@ namespace AdmissionsInformationSystem.Model
 			InState = row["inStateFlag"].ToString();
 			GPA = Convert.ToSingle(row["GPA"]);
 			SAT = Convert.ToInt32(row["SAT"]);
-		}
-
-		public static implicit operator MySqlParameter[](Approvals student)
-		{
-			return new[] { 
-				new MySqlParameter("SSN", student.SocialSecurityNumber),
-				new MySqlParameter("fName", student.FirstName),				
-				new MySqlParameter("lName", student.LastName),				
-				new MySqlParameter("inStateFlag", student.InState),				
-				new MySqlParameter("SAT", student.SAT),
-				new MySqlParameter("GPA", student.GPA)				
-			};
+            DesirabilityMetric = Convert.ToSingle(row["desirabilitymetric"]);
 		}
 	}
 }
